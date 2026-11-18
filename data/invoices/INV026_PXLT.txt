@@ -1,0 +1,21 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098237
+PH (515) 555-0199                               INV DATE  : 04OCT26
+                                                PRO NO    : 3104458120
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Brightwater Furnishings #419
+          1450 Laraway Rd                                124 Market St
+          JOLIET IL 60433                                MINNEAPOLIS MN 55406
+------------------------------------------------------------------------------
+P/U DATE 30SEP26   BOL LHG-JOL-0930-7105   PO 4500262887   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+   3   1  Area rugs, rolled, poly-wrapped     77.5       125#   108.56     135.70
+          NMFC 174060-02
+          LESS DISC 69.5 PCT                                            -16.20
+          MIN CHG APPLIED                                               119.50
+          FUEL SURCH 25.44%                                              30.40
+                                                              ----------------
+          TOTAL DUE                                                     149.90
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

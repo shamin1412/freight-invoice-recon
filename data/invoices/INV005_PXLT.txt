@@ -1,0 +1,20 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098133
+PH (515) 555-0199                               INV DATE  : 20SEP26
+                                                PRO NO    : 3104458023
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Saltbox Living Co.
+          1450 Laraway Rd                                8676 Enterprise Ave
+          JOLIET IL 60433                                COLUMBUS OH 43207
+------------------------------------------------------------------------------
+P/U DATE 15SEP26   BOL LHG-JOL-0915-6625   PO 4500225998   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+  15   1  Cast iron cookware, cartoned          55    805 LBS    61.92     498.46
+          NMFC 83060
+          LESS DISC 69.5 PCT                                           -346.43
+          FUEL SURCH 24.48%                                              37.22
+                                                              ----------------
+          TOTAL DUE                                                     189.25
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

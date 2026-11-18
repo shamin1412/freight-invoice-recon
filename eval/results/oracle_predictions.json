@@ -1,0 +1,1512 @@
+[
+ {
+  "file": "INV001_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77197",
+   "invoice_date": "2026-09-16",
+   "pro_number": "SF2604109",
+   "bol_number": "LHG-JOL-0914-4044",
+   "ship_date": "2026-09-14",
+   "origin_zip": "60433",
+   "dest_zip": "43207",
+   "mode": "TL",
+   "billed_weight_lbs": 26200.0,
+   "freight_class": null,
+   "miles": 334,
+   "linehaul_amount": 1400.0,
+   "fuel_surcharge_amount": 163.66,
+   "accessorials": [],
+   "total_due": 1563.66
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0005417269999270502,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV002_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011423",
+   "invoice_date": "2026-09-19",
+   "pro_number": "BWT20118011",
+   "bol_number": "LHG-RNO-0915-1091",
+   "ship_date": "2026-09-15",
+   "origin_zip": "89521",
+   "dest_zip": "84104",
+   "mode": "LTL",
+   "billed_weight_lbs": 5260.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 651.94,
+   "fuel_surcharge_amount": 172.89,
+   "accessorials": [],
+   "total_due": 824.83
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0003694950000863173,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV003_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1153",
+   "invoice_date": "2026-09-19",
+   "pro_number": "CC9110",
+   "bol_number": "LHG-SAV-0915-3390",
+   "ship_date": "2026-09-15",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "TL",
+   "billed_weight_lbs": 38700.0,
+   "freight_class": null,
+   "miles": 287,
+   "linehaul_amount": 1150.0,
+   "fuel_surcharge_amount": 129.15,
+   "accessorials": [],
+   "total_due": 1279.15
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00013196800000514486,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV004_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44182313",
+   "invoice_date": "2026-09-18",
+   "pro_number": "4418231-3",
+   "bol_number": "LHG-SAV-0914-9397",
+   "ship_date": "2026-09-14",
+   "origin_zip": "31407",
+   "dest_zip": "27695",
+   "mode": "LTL",
+   "billed_weight_lbs": 3370.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 586.67,
+   "fuel_surcharge_amount": 149.6,
+   "accessorials": [],
+   "total_due": 736.27
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002261009999529051,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV005_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098133",
+   "invoice_date": "2026-09-20",
+   "pro_number": "3104458023",
+   "bol_number": "LHG-JOL-0915-6625",
+   "ship_date": "2026-09-15",
+   "origin_zip": "60433",
+   "dest_zip": "43207",
+   "mode": "LTL",
+   "billed_weight_lbs": 805.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 152.03,
+   "fuel_surcharge_amount": 37.22,
+   "accessorials": [],
+   "total_due": 189.25
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002277670000694343,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV006_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098183",
+   "invoice_date": "2026-09-22",
+   "pro_number": "3104458063",
+   "bol_number": "LHG-JOL-0921-3433",
+   "ship_date": "2026-09-21",
+   "origin_zip": "60433",
+   "dest_zip": "43213",
+   "mode": "LTL",
+   "billed_weight_lbs": 2530.0,
+   "freight_class": "65",
+   "miles": null,
+   "linehaul_amount": 458.95,
+   "fuel_surcharge_amount": 114.55,
+   "accessorials": [],
+   "total_due": 573.5
+  },
+  "decision": "DISPUTE",
+  "overcharge": 80.77,
+  "findings": [
+   "LINEHAUL_VARIANCE"
+  ],
+  "seconds": 0.0002361309998377692,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV007_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100408",
+   "invoice_date": "2026-09-21",
+   "pro_number": "IH-26-04422",
+   "bol_number": "LHG-JOL-0917-4871",
+   "ship_date": "2026-09-17",
+   "origin_zip": "60433",
+   "dest_zip": "30336",
+   "mode": "TL",
+   "billed_weight_lbs": 29380.0,
+   "freight_class": null,
+   "miles": 718,
+   "linehaul_amount": 1775.0,
+   "fuel_surcharge_amount": 294.38,
+   "accessorials": [],
+   "total_due": 2069.38
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0001009620000331779,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV008_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098148",
+   "invoice_date": "2026-09-21",
+   "pro_number": "3104458060",
+   "bol_number": "LHG-JOL-0917-9419",
+   "ship_date": "2026-09-17",
+   "origin_zip": "60433",
+   "dest_zip": "48210",
+   "mode": "LTL",
+   "billed_weight_lbs": 1400.0,
+   "freight_class": "85",
+   "miles": null,
+   "linehaul_amount": 324.86,
+   "fuel_surcharge_amount": 79.53,
+   "accessorials": [
+    {
+     "code": "NOA",
+     "amount": 25.0
+    }
+   ],
+   "total_due": 429.39
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002796259998376627,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV009_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011460",
+   "invoice_date": "2026-09-25",
+   "pro_number": "BWT20118036",
+   "bol_number": "LHG-SAV-0921-6411",
+   "ship_date": "2026-09-21",
+   "origin_zip": "31407",
+   "dest_zip": "37210",
+   "mode": "LTL",
+   "billed_weight_lbs": 430.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 134.0,
+   "fuel_surcharge_amount": 36.23,
+   "accessorials": [
+    {
+     "code": "HAZ",
+     "amount": 42.0
+    }
+   ],
+   "total_due": 212.23
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00027696000006471877,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV010_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1157",
+   "invoice_date": "2026-09-25",
+   "pro_number": "CC9125",
+   "bol_number": "LHG-SAV-0921-1708",
+   "ship_date": "2026-09-21",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "TL",
+   "billed_weight_lbs": 24680.0,
+   "freight_class": null,
+   "miles": 287,
+   "linehaul_amount": 1150.0,
+   "fuel_surcharge_amount": 129.15,
+   "accessorials": [
+    {
+     "code": "LUM",
+     "amount": 185.0
+    }
+   ],
+   "total_due": 1464.15
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 9.997200004363549e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV011_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098203",
+   "invoice_date": "2026-09-27",
+   "pro_number": "3104458070",
+   "bol_number": "LHG-JOL-0923-1016",
+   "ship_date": "2026-09-23",
+   "origin_zip": "60433",
+   "dest_zip": "63132",
+   "mode": "LTL",
+   "billed_weight_lbs": 810.0,
+   "freight_class": "70",
+   "miles": null,
+   "linehaul_amount": 195.71,
+   "fuel_surcharge_amount": 48.85,
+   "accessorials": [],
+   "total_due": 244.56
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00023099000009096926,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV012_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44182683",
+   "invoice_date": "2026-09-27",
+   "pro_number": "4418268-3",
+   "bol_number": "LHG-SAV-0923-9473",
+   "ship_date": "2026-09-23",
+   "origin_zip": "31407",
+   "dest_zip": "37291",
+   "mode": "LTL",
+   "billed_weight_lbs": 9410.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 1585.49,
+   "fuel_surcharge_amount": 412.23,
+   "accessorials": [],
+   "total_due": 1997.72
+  },
+  "decision": "DISPUTE",
+  "overcharge": 331.18,
+  "findings": [
+   "WEIGHT_OVER_BOL"
+  ],
+  "seconds": 0.0002443670000502607,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV013_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100438",
+   "invoice_date": "2026-09-25",
+   "pro_number": "IH-26-04434",
+   "bol_number": "LHG-JOL-0922-3209",
+   "ship_date": "2026-09-22",
+   "origin_zip": "60433",
+   "dest_zip": "64120",
+   "mode": "TL",
+   "billed_weight_lbs": 31820.0,
+   "freight_class": null,
+   "miles": 509,
+   "linehaul_amount": 1300.0,
+   "fuel_surcharge_amount": 213.78,
+   "accessorials": [
+    {
+     "code": "DET",
+     "amount": 180.0
+    }
+   ],
+   "total_due": 1693.78
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00012877300014224602,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV014_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011462",
+   "invoice_date": "2026-09-29",
+   "pro_number": "BWT20118055",
+   "bol_number": "LHG-SAV-0925-9638",
+   "ship_date": "2026-09-25",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "LTL",
+   "billed_weight_lbs": 4250.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 538.68,
+   "fuel_surcharge_amount": 164.51,
+   "accessorials": [],
+   "total_due": 703.19
+  },
+  "decision": "DISPUTE",
+  "overcharge": 18.85,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.0002485710001565167,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV015_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098208",
+   "invoice_date": "2026-09-28",
+   "pro_number": "3104458095",
+   "bol_number": "LHG-JOL-0925-7364",
+   "ship_date": "2026-09-25",
+   "origin_zip": "60433",
+   "dest_zip": "48210",
+   "mode": "LTL",
+   "billed_weight_lbs": 5225.0,
+   "freight_class": "85",
+   "miles": null,
+   "linehaul_amount": 814.02,
+   "fuel_surcharge_amount": 203.18,
+   "accessorials": [],
+   "total_due": 1017.2
+  },
+  "decision": "DISPUTE",
+  "overcharge": 130.03,
+  "findings": [
+   "CLASS_MISMATCH"
+  ],
+  "seconds": 0.00022273700005825958,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV016_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44182582",
+   "invoice_date": "2026-09-27",
+   "pro_number": "4418258-2",
+   "bol_number": "LHG-JOL-0921-5853",
+   "ship_date": "2026-09-21",
+   "origin_zip": "60433",
+   "dest_zip": "63132",
+   "mode": "LTL",
+   "billed_weight_lbs": 7860.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 1090.69,
+   "fuel_surcharge_amount": 283.58,
+   "accessorials": [
+    {
+     "code": "LGD",
+     "amount": 92.0
+    }
+   ],
+   "total_due": 1466.27
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00023797299991201726,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV017_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77205",
+   "invoice_date": "2026-09-26",
+   "pro_number": "SF2604118",
+   "bol_number": "LHG-JOL-0921-1629",
+   "ship_date": "2026-09-21",
+   "origin_zip": "60433",
+   "dest_zip": "77029",
+   "mode": "TL",
+   "billed_weight_lbs": 22200.0,
+   "freight_class": null,
+   "miles": 1083,
+   "linehaul_amount": 3425.0,
+   "fuel_surcharge_amount": 541.5,
+   "accessorials": [
+    {
+     "code": "TARP",
+     "amount": 100.0
+    }
+   ],
+   "total_due": 4066.5
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00010282199991706875,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV018_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77228",
+   "invoice_date": "2026-09-29",
+   "pro_number": "SF2604155",
+   "bol_number": "LHG-JOL-0925-3438",
+   "ship_date": "2026-09-25",
+   "origin_zip": "60433",
+   "dest_zip": "43207",
+   "mode": "TL",
+   "billed_weight_lbs": 25880.0,
+   "freight_class": null,
+   "miles": 334,
+   "linehaul_amount": 1400.0,
+   "fuel_surcharge_amount": 170.34,
+   "accessorials": [],
+   "total_due": 1570.34
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.00014011700000082783,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV019_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1168",
+   "invoice_date": "2026-09-30",
+   "pro_number": "CC9126",
+   "bol_number": "LHG-SAV-0928-6239",
+   "ship_date": "2026-09-28",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "TL",
+   "billed_weight_lbs": 35340.0,
+   "freight_class": null,
+   "miles": 287,
+   "linehaul_amount": 1150.0,
+   "fuel_surcharge_amount": 154.98,
+   "accessorials": [],
+   "total_due": 1304.98
+  },
+  "decision": "DISPUTE",
+  "overcharge": 22.96,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 9.671899988461519e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV020_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100452",
+   "invoice_date": "2026-09-30",
+   "pro_number": "IH-26-04456",
+   "bol_number": "LHG-JOL-0928-7634",
+   "ship_date": "2026-09-28",
+   "origin_zip": "60433",
+   "dest_zip": "17111",
+   "mode": "TL",
+   "billed_weight_lbs": 22740.0,
+   "freight_class": null,
+   "miles": 702,
+   "linehaul_amount": 1675.0,
+   "fuel_surcharge_amount": 294.84,
+   "accessorials": [
+    {
+     "code": "DET",
+     "amount": 390.0
+    }
+   ],
+   "total_due": 2359.84
+  },
+  "decision": "DISPUTE",
+  "overcharge": 210.0,
+  "findings": [
+   "DETENTION_EXCESS"
+  ],
+  "seconds": 0.00013196999998399406,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV021_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44182931",
+   "invoice_date": "2026-10-02",
+   "pro_number": "4418293-1",
+   "bol_number": "LHG-JOL-0928-6514",
+   "ship_date": "2026-09-28",
+   "origin_zip": "60433",
+   "dest_zip": "63132",
+   "mode": "LTL",
+   "billed_weight_lbs": 275.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 128.0,
+   "fuel_surcharge_amount": 33.92,
+   "accessorials": [],
+   "total_due": 161.92
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00021423799989861436,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV022_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77237",
+   "invoice_date": "2026-10-02",
+   "pro_number": "SF2604166",
+   "bol_number": "LHG-JOL-0928-4004",
+   "ship_date": "2026-09-28",
+   "origin_zip": "60433",
+   "dest_zip": "43207",
+   "mode": "TL",
+   "billed_weight_lbs": 26840.0,
+   "freight_class": null,
+   "miles": 334,
+   "linehaul_amount": 1400.0,
+   "fuel_surcharge_amount": 167.0,
+   "accessorials": [
+    {
+     "code": "TARP",
+     "amount": 100.0
+    }
+   ],
+   "total_due": 1667.0
+  },
+  "decision": "DISPUTE",
+  "overcharge": 100.0,
+  "findings": [
+   "UNAUTHORIZED_ACCESSORIAL"
+  ],
+  "seconds": 0.00011078900001848524,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV023_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1187",
+   "invoice_date": "2026-10-03",
+   "pro_number": "CC9147",
+   "bol_number": "LHG-RNO-0930-4283",
+   "ship_date": "2026-09-30",
+   "origin_zip": "89521",
+   "dest_zip": "85043",
+   "mode": "TL",
+   "billed_weight_lbs": 30400.0,
+   "freight_class": null,
+   "miles": 736,
+   "linehaul_amount": 2100.0,
+   "fuel_surcharge_amount": 338.56,
+   "accessorials": [
+    {
+     "code": "DET",
+     "amount": 75.0
+    }
+   ],
+   "total_due": 2513.56
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00010285100006512948,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV024_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011508",
+   "invoice_date": "2026-10-04",
+   "pro_number": "BWT20118011",
+   "bol_number": "LHG-RNO-0915-1091",
+   "ship_date": "2026-09-15",
+   "origin_zip": "89521",
+   "dest_zip": "84104",
+   "mode": "LTL",
+   "billed_weight_lbs": 5260.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 651.94,
+   "fuel_surcharge_amount": 172.89,
+   "accessorials": [],
+   "total_due": 824.83
+  },
+  "decision": "DISPUTE",
+  "overcharge": 824.83,
+  "findings": [
+   "DUPLICATE"
+  ],
+  "seconds": 8.989399998426961e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV025_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77241",
+   "invoice_date": "2026-10-04",
+   "pro_number": "SF2604168",
+   "bol_number": "LHG-RNO-0930-4420",
+   "ship_date": "2026-09-30",
+   "origin_zip": "89521",
+   "dest_zip": "80216",
+   "mode": "TL",
+   "billed_weight_lbs": 34480.0,
+   "freight_class": null,
+   "miles": 1031,
+   "linehaul_amount": 3350.0,
+   "fuel_surcharge_amount": 515.5,
+   "accessorials": [
+    {
+     "code": "STP",
+     "amount": 95.0
+    }
+   ],
+   "total_due": 3960.5
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00010332400006518583,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV026_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098237",
+   "invoice_date": "2026-10-04",
+   "pro_number": "3104458120",
+   "bol_number": "LHG-JOL-0930-7105",
+   "ship_date": "2026-09-30",
+   "origin_zip": "60433",
+   "dest_zip": "55406",
+   "mode": "LTL",
+   "billed_weight_lbs": 125.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 119.5,
+   "fuel_surcharge_amount": 30.4,
+   "accessorials": [],
+   "total_due": 149.9
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00032228100008069305,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV027_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011474",
+   "invoice_date": "2026-10-06",
+   "pro_number": "BWT20118062",
+   "bol_number": "LHG-SAV-0930-2031",
+   "ship_date": "2026-09-30",
+   "origin_zip": "31407",
+   "dest_zip": "37210",
+   "mode": "LTL",
+   "billed_weight_lbs": 1415.0,
+   "freight_class": "100",
+   "miles": null,
+   "linehaul_amount": 446.91,
+   "fuel_surcharge_amount": 123.17,
+   "accessorials": [
+    {
+     "code": "LAD",
+     "amount": 98.0
+    }
+   ],
+   "total_due": 668.08
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00023715399993307074,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV028_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44183213",
+   "invoice_date": "2026-10-05",
+   "pro_number": "4418321-3",
+   "bol_number": "LHG-SAV-1001-4182",
+   "ship_date": "2026-10-01",
+   "origin_zip": "31407",
+   "dest_zip": "35211",
+   "mode": "LTL",
+   "billed_weight_lbs": 8845.0,
+   "freight_class": "125",
+   "miles": null,
+   "linehaul_amount": 2182.6,
+   "fuel_surcharge_amount": 578.39,
+   "accessorials": [
+    {
+     "code": "LGD",
+     "amount": 92.0
+    }
+   ],
+   "total_due": 2852.99
+  },
+  "decision": "DISPUTE",
+  "overcharge": 92.0,
+  "findings": [
+   "UNAUTHORIZED_ACCESSORIAL"
+  ],
+  "seconds": 0.00024819899999783956,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV029_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011479",
+   "invoice_date": "2026-10-09",
+   "pro_number": "BWT20118077",
+   "bol_number": "LHG-RNO-1005-8426",
+   "ship_date": "2026-10-05",
+   "origin_zip": "89521",
+   "dest_zip": "95882",
+   "mode": "LTL",
+   "billed_weight_lbs": 1080.0,
+   "freight_class": "100",
+   "miles": null,
+   "linehaul_amount": 235.08,
+   "fuel_surcharge_amount": 64.79,
+   "accessorials": [],
+   "total_due": 299.87
+  },
+  "decision": "EXCEPTION",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 8.287800005746249e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV030_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1201",
+   "invoice_date": "2026-10-08",
+   "pro_number": "CC9164",
+   "bol_number": "LHG-SAV-1005-9103",
+   "ship_date": "2026-10-05",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "TL",
+   "billed_weight_lbs": 41520.0,
+   "freight_class": null,
+   "miles": 287,
+   "linehaul_amount": 1150.0,
+   "fuel_surcharge_amount": 129.15,
+   "accessorials": [
+    {
+     "code": "DET",
+     "amount": 412.5
+    }
+   ],
+   "total_due": 1691.65
+  },
+  "decision": "DISPUTE",
+  "overcharge": 262.5,
+  "findings": [
+   "DETENTION_EXCESS"
+  ],
+  "seconds": 0.00014287200019680313,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV031_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100485",
+   "invoice_date": "2026-10-08",
+   "pro_number": "IH-26-04492",
+   "bol_number": "LHG-JOL-1005-7484",
+   "ship_date": "2026-10-05",
+   "origin_zip": "60433",
+   "dest_zip": "75241",
+   "mode": "TL",
+   "billed_weight_lbs": 24960.0,
+   "freight_class": null,
+   "miles": 931,
+   "linehaul_amount": 2225.0,
+   "fuel_surcharge_amount": 391.02,
+   "accessorials": [
+    {
+     "code": "STP",
+     "amount": 85.0
+    }
+   ],
+   "total_due": 2701.02
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00013904299999012437,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV032_SMFB.txt",
+  "extraction": {
+   "carrier_scac": "SMFB",
+   "invoice_number": "SMF-77252",
+   "invoice_date": "2026-10-07",
+   "pro_number": "SF2604171",
+   "bol_number": "LHG-RNO-1005-4621",
+   "ship_date": "2026-10-05",
+   "origin_zip": "89521",
+   "dest_zip": "80216",
+   "mode": "TL",
+   "billed_weight_lbs": 18340.0,
+   "freight_class": null,
+   "miles": 1031,
+   "linehaul_amount": 3350.0,
+   "fuel_surcharge_amount": 515.5,
+   "accessorials": [],
+   "total_due": 3865.5
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.000142300999868894,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV033_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098254",
+   "invoice_date": "2026-10-09",
+   "pro_number": "3104458139",
+   "bol_number": "LHG-JOL-1006-1916",
+   "ship_date": "2026-10-06",
+   "origin_zip": "60433",
+   "dest_zip": "63132",
+   "mode": "LTL",
+   "billed_weight_lbs": 12220.0,
+   "freight_class": "125",
+   "miles": null,
+   "linehaul_amount": 2304.47,
+   "fuel_surcharge_amount": 586.26,
+   "accessorials": [
+    {
+     "code": "INS",
+     "amount": 89.0
+    }
+   ],
+   "total_due": 2979.73
+  },
+  "decision": "DISPUTE",
+  "overcharge": 255.79,
+  "findings": [
+   "WEIGHT_OVER_BOL",
+   "UNAUTHORIZED_ACCESSORIAL"
+  ],
+  "seconds": 0.00029190999998718326,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV034_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1153",
+   "invoice_date": "2026-09-19",
+   "pro_number": "CC9110",
+   "bol_number": "LHG-SAV-0915-3390",
+   "ship_date": "2026-09-15",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "TL",
+   "billed_weight_lbs": 38700.0,
+   "freight_class": null,
+   "miles": 287,
+   "linehaul_amount": 1150.0,
+   "fuel_surcharge_amount": 129.15,
+   "accessorials": [],
+   "total_due": 1279.15
+  },
+  "decision": "DISPUTE",
+  "overcharge": 1279.15,
+  "findings": [
+   "DUPLICATE"
+  ],
+  "seconds": 7.174500001383421e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV035_CCCO.txt",
+  "extraction": {
+   "carrier_scac": "CCCO",
+   "invoice_number": "CCC-2026-1216",
+   "invoice_date": "2026-10-14",
+   "pro_number": "CC9184",
+   "bol_number": "LHG-SAV-1009-6244",
+   "ship_date": "2026-10-09",
+   "origin_zip": "31407",
+   "dest_zip": "75241",
+   "mode": "TL",
+   "billed_weight_lbs": 40940.0,
+   "freight_class": null,
+   "miles": 1012,
+   "linehaul_amount": 3025.0,
+   "fuel_surcharge_amount": 455.4,
+   "accessorials": [],
+   "total_due": 3480.4
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 9.397000007993483e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV036_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44182582",
+   "invoice_date": "2026-09-27",
+   "pro_number": "4418258-2",
+   "bol_number": "LHG-JOL-0921-5853",
+   "ship_date": "2026-09-21",
+   "origin_zip": "60433",
+   "dest_zip": "63132",
+   "mode": "LTL",
+   "billed_weight_lbs": 7860.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 1090.69,
+   "fuel_surcharge_amount": 283.58,
+   "accessorials": [
+    {
+     "code": "LGD",
+     "amount": 92.0
+    }
+   ],
+   "total_due": 1466.27
+  },
+  "decision": "DISPUTE",
+  "overcharge": 1466.27,
+  "findings": [
+   "DUPLICATE"
+  ],
+  "seconds": 7.938899989312631e-05,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV037_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098276",
+   "invoice_date": "2026-10-13",
+   "pro_number": "3104458174",
+   "bol_number": "LHG-JOL-1012-4480",
+   "ship_date": "2026-10-12",
+   "origin_zip": "60433",
+   "dest_zip": "48219",
+   "mode": "LTL",
+   "billed_weight_lbs": 6110.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 885.56,
+   "fuel_surcharge_amount": 226.35,
+   "accessorials": [],
+   "total_due": 1111.91
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.0002893300002142496,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV038_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44183673",
+   "invoice_date": "2026-10-15",
+   "pro_number": "4418367-3",
+   "bol_number": "LHG-SAV-1012-4981",
+   "ship_date": "2026-10-12",
+   "origin_zip": "31407",
+   "dest_zip": "28208",
+   "mode": "LTL",
+   "billed_weight_lbs": 1015.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 204.99,
+   "fuel_surcharge_amount": 54.53,
+   "accessorials": [],
+   "total_due": 259.52
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.00023370600001726416,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV039_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011484",
+   "invoice_date": "2026-10-16",
+   "pro_number": "BWT20118109",
+   "bol_number": "LHG-RNO-1012-7029",
+   "ship_date": "2026-10-12",
+   "origin_zip": "89521",
+   "dest_zip": "95815",
+   "mode": "LTL",
+   "billed_weight_lbs": 3820.0,
+   "freight_class": "100",
+   "miles": null,
+   "linehaul_amount": 688.92,
+   "fuel_surcharge_amount": 186.28,
+   "accessorials": [],
+   "total_due": 875.2
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002204440002060437,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV040_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44183505",
+   "invoice_date": "2026-10-13",
+   "pro_number": "4418350-5",
+   "bol_number": "LHG-JOL-1007-7616",
+   "ship_date": "2026-10-07",
+   "origin_zip": "60433",
+   "dest_zip": "50313",
+   "mode": "LTL",
+   "billed_weight_lbs": 5220.0,
+   "freight_class": "77.5",
+   "miles": null,
+   "linehaul_amount": 738.89,
+   "fuel_surcharge_amount": 195.81,
+   "accessorials": [
+    {
+     "code": "RES",
+     "amount": 118.0
+    },
+    {
+     "code": "LGD",
+     "amount": 92.0
+    }
+   ],
+   "total_due": 1144.7
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002422510001451883,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV041_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100508",
+   "invoice_date": "2026-10-16",
+   "pro_number": "IH-26-04499",
+   "bol_number": "LHG-JOL-1012-1701",
+   "ship_date": "2026-10-12",
+   "origin_zip": "60433",
+   "dest_zip": "30336",
+   "mode": "TL",
+   "billed_weight_lbs": 25480.0,
+   "freight_class": null,
+   "miles": 718,
+   "linehaul_amount": 2050.0,
+   "fuel_surcharge_amount": 294.38,
+   "accessorials": [],
+   "total_due": 2344.38
+  },
+  "decision": "DISPUTE",
+  "overcharge": 275.0,
+  "findings": [
+   "LINEHAUL_VARIANCE"
+  ],
+  "seconds": 0.00011707899989232828,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV042_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100541",
+   "invoice_date": "2026-10-18",
+   "pro_number": "IH-26-04533",
+   "bol_number": "LHG-JOL-1016-7044",
+   "ship_date": "2026-10-16",
+   "origin_zip": "60433",
+   "dest_zip": "75241",
+   "mode": "TL",
+   "billed_weight_lbs": 29160.0,
+   "freight_class": null,
+   "miles": 931,
+   "linehaul_amount": 2225.0,
+   "fuel_surcharge_amount": 381.71,
+   "accessorials": [],
+   "total_due": 2606.71
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00013187900003686082,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV043_PXLT.txt",
+  "extraction": {
+   "carrier_scac": "PXLT",
+   "invoice_number": "PX-INV-0098296",
+   "invoice_date": "2026-10-21",
+   "pro_number": "3104458207",
+   "bol_number": "LHG-JOL-1015-4281",
+   "ship_date": "2026-10-15",
+   "origin_zip": "60433",
+   "dest_zip": "48210",
+   "mode": "LTL",
+   "billed_weight_lbs": 1195.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 193.46,
+   "fuel_surcharge_amount": 48.29,
+   "accessorials": [
+    {
+     "code": "HAZ",
+     "amount": 35.0
+    }
+   ],
+   "total_due": 276.75
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00023894400010249228,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV044_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44183976",
+   "invoice_date": "2026-10-20",
+   "pro_number": "4418397-6",
+   "bol_number": "LHG-SAV-1016-2712",
+   "ship_date": "2026-10-16",
+   "origin_zip": "31407",
+   "dest_zip": "32809",
+   "mode": "LTL",
+   "billed_weight_lbs": 710.0,
+   "freight_class": "100",
+   "miles": null,
+   "linehaul_amount": 212.69,
+   "fuel_surcharge_amount": 55.3,
+   "accessorials": [],
+   "total_due": 267.99
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00021401300000434276,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV045_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011512",
+   "invoice_date": "2026-10-21",
+   "pro_number": "BWT20118158",
+   "bol_number": "LHG-RNO-1020-5497",
+   "ship_date": "2026-10-20",
+   "origin_zip": "89521",
+   "dest_zip": "95815",
+   "mode": "LTL",
+   "billed_weight_lbs": 350.0,
+   "freight_class": "85",
+   "miles": null,
+   "linehaul_amount": 134.0,
+   "fuel_surcharge_amount": 36.23,
+   "accessorials": [
+    {
+     "code": "RES",
+     "amount": 122.0
+    },
+    {
+     "code": "LGD",
+     "amount": 96.0
+    },
+    {
+     "code": "NOA",
+     "amount": 32.0
+    }
+   ],
+   "total_due": 420.23
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.0002670369999577815,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV046_BWTR.pdf",
+  "extraction": {
+   "carrier_scac": "BWTR",
+   "invoice_number": "26-011489",
+   "invoice_date": "2026-10-22",
+   "pro_number": "BWT20118142",
+   "bol_number": "LHG-RNO-1015-4514",
+   "ship_date": "2026-10-15",
+   "origin_zip": "89521",
+   "dest_zip": "97230",
+   "mode": "LTL",
+   "billed_weight_lbs": 350.0,
+   "freight_class": "100",
+   "miles": null,
+   "linehaul_amount": 160.03,
+   "fuel_surcharge_amount": 43.27,
+   "accessorials": [],
+   "total_due": 203.3
+  },
+  "decision": "DISPUTE",
+  "overcharge": 31.95,
+  "findings": [
+   "WEIGHT_OVER_BOL"
+  ],
+  "seconds": 0.00024449300008200225,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV047_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100546",
+   "invoice_date": "2026-10-23",
+   "pro_number": "IH-26-04562",
+   "bol_number": "LHG-JOL-1021-3139",
+   "ship_date": "2026-10-21",
+   "origin_zip": "60433",
+   "dest_zip": "64120",
+   "mode": "TL",
+   "billed_weight_lbs": 36060.0,
+   "freight_class": null,
+   "miles": 509,
+   "linehaul_amount": 1300.0,
+   "fuel_surcharge_amount": 213.78,
+   "accessorials": [],
+   "total_due": 1513.78
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.00012378299993542896,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV048_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100593",
+   "invoice_date": "2026-10-29",
+   "pro_number": "IH-26-04607",
+   "bol_number": "LHG-JOL-1028-1577",
+   "ship_date": "2026-10-28",
+   "origin_zip": "60433",
+   "dest_zip": "17111",
+   "mode": "TL",
+   "billed_weight_lbs": 40960.0,
+   "freight_class": null,
+   "miles": 702,
+   "linehaul_amount": 1675.0,
+   "fuel_surcharge_amount": 287.82,
+   "accessorials": [
+    {
+     "code": "LUM",
+     "amount": 210.0
+    }
+   ],
+   "total_due": 2172.82
+  },
+  "decision": "APPROVE",
+  "overcharge": 0.0,
+  "findings": [],
+  "seconds": 0.00011530500000844768,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV049_RDGL.pdf",
+  "extraction": {
+   "carrier_scac": "RDGL",
+   "invoice_number": "44184179",
+   "invoice_date": "2026-10-26",
+   "pro_number": "4418417-9",
+   "bol_number": "LHG-SAV-1022-2601",
+   "ship_date": "2026-10-22",
+   "origin_zip": "31407",
+   "dest_zip": "32819",
+   "mode": "LTL",
+   "billed_weight_lbs": 2065.0,
+   "freight_class": "55",
+   "miles": null,
+   "linehaul_amount": 262.54,
+   "fuel_surcharge_amount": 80.07,
+   "accessorials": [],
+   "total_due": 342.61
+  },
+  "decision": "DISPUTE",
+  "overcharge": 11.81,
+  "findings": [
+   "FUEL_VARIANCE"
+  ],
+  "seconds": 0.00023249299988492567,
+  "in_tok": 0,
+  "out_tok": 0
+ },
+ {
+  "file": "INV050_IHLG.pdf",
+  "extraction": {
+   "carrier_scac": "IHLG",
+   "invoice_number": "IH100568",
+   "invoice_date": "2026-10-30",
+   "pro_number": "IH-26-04574",
+   "bol_number": "LHG-JOL-1026-9449",
+   "ship_date": "2026-10-26",
+   "origin_zip": "60433",
+   "dest_zip": "75241",
+   "mode": "TL",
+   "billed_weight_lbs": 37320.0,
+   "freight_class": null,
+   "miles": 931,
+   "linehaul_amount": 2225.0,
+   "fuel_surcharge_amount": 381.71,
+   "accessorials": [
+    {
+     "code": "LAY",
+     "amount": 275.0
+    }
+   ],
+   "total_due": 2881.71
+  },
+  "decision": "DISPUTE",
+  "overcharge": 275.0,
+  "findings": [
+   "UNAUTHORIZED_ACCESSORIAL"
+  ],
+  "seconds": 0.0001223339997977746,
+  "in_tok": 0,
+  "out_tok": 0
+ }
+]

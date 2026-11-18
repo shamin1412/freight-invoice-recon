@@ -1,0 +1,30 @@
+From: billing@coldchaincarriers.example
+To: freightpayables@larkspurhome.example
+Subject: Invoice CCC-2026-1187 - Load CC9147 - Reno to Phoenix
+Date: 10/3/26
+
+Hi team,
+
+Please find invoice details for the load below. PDF copy to follow from our system.
+
+Invoice #: CCC-2026-1187
+Load/PRO: CC9147
+Your BOL: LHG-RNO-0930-4283  /  PO 4500234701
+Picked up 9/30/26 at Larkspur Home Goods - Reno DC, Reno NV 89521
+Delivered 10/1/26 to Cobalt Kitchen Supply, Phoenix AZ 85043
+  (checked in 0800, out 1115)
+Equipment: 53' reefer, set point 55F continuous
+Product: Soy candles & wax melts, temp controlled 55-65F, 22 pallets, 30,400 lbs
+
+Charges:
+  Linehaul (flat) ............ $2,100.00
+  Fuel  736 mi x $0.46 ..... $338.56
+  Detention at receiver: 1 hrs @ $75 ... $75.00
+  TOTAL DUE: $2,513.56
+
+Terms net 30. Remit to PO Box 5521, Lakeland FL 33807 or ACH (details on file).
+
+Thank you,
+Shonda R.
+Billing Dept | Coldchain Carriers Co.
+(863) 555-0108

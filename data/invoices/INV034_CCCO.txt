@@ -1,0 +1,31 @@
+From: billing@coldchaincarriers.example
+To: freightpayables@larkspurhome.example
+Subject: RE: Invoice CCC-2026-1153 - Load CC9110 - Savannah to Orlando (2nd request)
+Date: 9/19/26
+
+Good morning,
+
+Following up on the invoice below, we have not received payment yet. Please advise.
+
+Please find invoice details for the load below. PDF copy to follow from our system.
+
+Invoice #: CCC-2026-1153
+Load/PRO: CC9110
+Your BOL: LHG-SAV-0915-3390  /  PO 4500284948
+Picked up 9/15/26 at Larkspur Home Goods - Savannah DC, Savannah GA 31407
+Delivered 9/16/26 to Tallgrass Home Center #713, Orlando FL 32809
+  (checked in 0800, out 0843)
+Equipment: 53' reefer, set point 55F continuous
+Product: Live potted plants, temp controlled 50F, 24 pallets, 38,700 lbs
+
+Charges:
+  Linehaul (flat) ............ $1,150.00
+  Fuel  287 mi x $0.45 ..... $129.15
+  TOTAL DUE: $1,279.15
+
+Terms net 30. Remit to PO Box 5521, Lakeland FL 33807 or ACH (details on file).
+
+Best,
+Shonda R.
+Billing Dept | Coldchain Carriers Co.
+(863) 555-0108

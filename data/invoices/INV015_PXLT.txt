@@ -1,0 +1,21 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098208
+PH (515) 555-0199                               INV DATE  : 28SEP26
+                                                PRO NO    : 3104458095
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Brightwater Furnishings #732
+          1450 Laraway Rd                                6356 Logistics Blvd
+          JOLIET IL 60433                                DETROIT MI 48210
+------------------------------------------------------------------------------
+P/U DATE 25SEP26   BOL LHG-JOL-0925-7364   PO 4500254544   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+ 115   8  Ceramic dinnerware, cartoned          85   5225 LBS    51.08   2,668.93
+          NMFC 86920-04
+          LESS DISC 69.5 PCT                                         -1,854.91
+          FUEL SURCH 24.96%                                             203.18
+                                                              ----------------
+          TOTAL DUE                                                   1,017.20
+==============================================================================
+*** Reclassed per carrier inspection ***
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

@@ -1,0 +1,21 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098254
+PH (515) 555-0199                               INV DATE  : 09OCT26
+                                                PRO NO    : 3104458139
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Willowmere Decor
+          1450 Laraway Rd                                1872 Industrial Pkwy
+          JOLIET IL 60433                                ST. LOUIS MO 63132
+------------------------------------------------------------------------------
+P/U DATE 06OCT26   BOL LHG-JOL-1006-1916   PO 4500271852   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+ 140  10  Furniture, KD, wood, boxed           125  12220 LBS    61.83   7,555.63
+          NMFC 79300-07
+          LESS DISC 69.5 PCT                                         -5,251.16
+          FUEL SURCH 25.44%                                             586.26
+          INSIDE DEL                                                     89.00
+                                                              ----------------
+          TOTAL DUE                                                   2,979.73
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

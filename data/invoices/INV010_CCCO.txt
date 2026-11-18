@@ -1,0 +1,30 @@
+From: billing@coldchaincarriers.example
+To: freightpayables@larkspurhome.example
+Subject: Invoice CCC-2026-1157 - Load CC9125 - Savannah to Orlando
+Date: 9/25/26
+
+Hi,
+
+Please find invoice details for the load below. PDF copy to follow from our system.
+
+Invoice #: CCC-2026-1157
+Load/PRO: CC9125
+Your BOL: LHG-SAV-0921-1708  /  PO 4500270875
+Picked up 9/21/26 at Larkspur Home Goods - Savannah DC, Savannah GA 31407
+Delivered 9/22/26 to Saltbox Living Co., Orlando FL 32809
+  (checked in 0900, out 1016)
+Equipment: 53' reefer, set point 60F continuous
+Product: Soy candles & wax melts, temp controlled 55-65F, 25 pallets, 24,680 lbs
+
+Charges:
+  Linehaul (flat) ............ $1,150.00
+  Fuel  287 mi x $0.45 ..... $129.15
+  Lumper fee (receipt attached) ... $185.00
+  TOTAL DUE: $1,464.15
+
+Terms net 30. Remit to PO Box 5521, Lakeland FL 33807 or ACH (details on file).
+
+Thanks,
+Shonda R.
+Billing Dept | Coldchain Carriers Co.
+(863) 555-0108

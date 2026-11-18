@@ -1,0 +1,21 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098148
+PH (515) 555-0199                               INV DATE  : 21SEP26
+                                                PRO NO    : 3104458060
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Harbor Lane Housewares
+          1450 Laraway Rd                                9729 Cedar Bluff Ln
+          JOLIET IL 60433                                DETROIT MI 48210
+------------------------------------------------------------------------------
+P/U DATE 17SEP26   BOL LHG-JOL-0917-9419   PO 4500281717   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+  43   1  Glass candle jars, boxed              85     1,400#    76.08   1,065.12
+          NMFC 86750-03
+          LESS DISC 69.5 PCT                                           -740.26
+          FUEL SURCH 24.48%                                              79.53
+          APPT/NOTIFY                                                    25.00
+                                                              ----------------
+          TOTAL DUE                                                     429.39
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

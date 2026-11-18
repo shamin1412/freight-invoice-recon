@@ -1,0 +1,47 @@
+{
+ "oracle": {
+  "invoices": 50,
+  "extraction_field_accuracy": 1.0,
+  "extraction_invoices_all_fields_correct": 50,
+  "decision_accuracy": 1.0,
+  "touchless_rate": 0.64,
+  "touchless_ceiling": 0.64,
+  "clean_invoices_auto_approved": "32/32",
+  "bad_invoices_auto_approved": 0,
+  "error_invoices_flagged": "18/18",
+  "clean_invoices_flagged": 0,
+  "overcharge_planted": 5668.09,
+  "overcharge_caught": 5668.09,
+  "overcharge_amount_exact": "17/17",
+  "overcharge_flagged_total": 5668.09,
+  "seconds_per_invoice_mean": 0.0,
+  "seconds_per_invoice_median": 0.0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "est_cost_usd": 0.0,
+  "per_field": {
+   "carrier_scac": 1.0,
+   "invoice_number": 1.0,
+   "invoice_date": 1.0,
+   "pro_number": 1.0,
+   "bol_number": 1.0,
+   "ship_date": 1.0,
+   "origin_zip": 1.0,
+   "dest_zip": 1.0,
+   "mode": 1.0,
+   "billed_weight_lbs": 1.0,
+   "freight_class": 1.0,
+   "miles": 1.0,
+   "linehaul_amount": 1.0,
+   "fuel_surcharge_amount": 1.0,
+   "accessorials": 1.0,
+   "total_due": 1.0
+  },
+  "model": null,
+  "effort": null
+ },
+ "_meta": {
+  "invoices": 50,
+  "generated_at": "2026-11-18T05:50:59.026698+00:00"
+ }
+}

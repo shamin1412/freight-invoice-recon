@@ -1,0 +1,29 @@
+From: billing@coldchaincarriers.example
+To: freightpayables@larkspurhome.example
+Subject: Invoice CCC-2026-1216 - Load CC9184 - Savannah to Dallas
+Date: 10/14/26
+
+Good morning,
+
+Please find invoice details for the load below. PDF copy to follow from our system.
+
+Invoice #: CCC-2026-1216
+Load/PRO: CC9184
+Your BOL: LHG-SAV-1009-6244  /  PO 4500247416
+Picked up 10/9/26 at Larkspur Home Goods - Savannah DC, Savannah GA 31407
+Delivered 10/11/26 to Northline Home Store #886, Dallas TX 75241
+  (checked in 0800, out 0904)
+Equipment: 53' reefer, set point 50F continuous
+Product: Soy candles & wax melts, temp controlled 55-65F, 23 pallets, 40,940 lbs
+
+Charges:
+  Linehaul (flat) ............ $3,025.00
+  Fuel  1012 mi x $0.45 ..... $455.40
+  TOTAL DUE: $3,480.40
+
+Terms net 30. Remit to PO Box 5521, Lakeland FL 33807 or ACH (details on file).
+
+Best,
+Kevin T.
+Billing Dept | Coldchain Carriers Co.
+(863) 555-0108

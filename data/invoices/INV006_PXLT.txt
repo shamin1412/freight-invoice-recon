@@ -1,0 +1,20 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098183
+PH (515) 555-0199                               INV DATE  : 22SEP26
+                                                PRO NO    : 3104458063
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Granite Peak Home #285
+          1450 Laraway Rd                                4207 Logistics Blvd
+          JOLIET IL 60433                                COLUMBUS OH 43213
+------------------------------------------------------------------------------
+P/U DATE 21SEP26   BOL LHG-JOL-0921-3433   PO 4500275696   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+  64   4  Kitchen textiles (towels, linens),    65   2530 LBS    51.10   1,292.83
+          NMFC 49880-02
+          LESS DISC 64.5 PCT                                           -833.88
+          FUEL SURCH 24.96%                                             114.55
+                                                              ----------------
+          TOTAL DUE                                                     573.50
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.

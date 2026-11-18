@@ -1,0 +1,30 @@
+From: billing@coldchaincarriers.example
+To: freightpayables@larkspurhome.example
+Subject: Invoice CCC-2026-1201 - Load CC9164 - Savannah to Orlando
+Date: 10/8/26
+
+Hi,
+
+Please find invoice details for the load below. PDF copy to follow from our system.
+
+Invoice #: CCC-2026-1201
+Load/PRO: CC9164
+Your BOL: LHG-SAV-1005-9103  /  PO 4500217747
+Picked up 10/5/26 at Larkspur Home Goods - Savannah DC, Savannah GA 31407
+Delivered 10/6/26 to Willowmere Decor, Orlando FL 32809
+  (checked in 0700, out 1100)
+Equipment: 53' reefer, set point 60F continuous
+Product: Live potted plants, temp controlled 50F, 20 pallets, 41,520 lbs
+
+Charges:
+  Linehaul (flat) ............ $1,150.00
+  Fuel  287 mi x $0.45 ..... $129.15
+  Detention at receiver: 5.5 hrs @ $75 ... $412.50
+  TOTAL DUE: $1,691.65
+
+Terms net 30. Remit to PO Box 5521, Lakeland FL 33807 or ACH (details on file).
+
+Thanks,
+Shonda R.
+Billing Dept | Coldchain Carriers Co.
+(863) 555-0108

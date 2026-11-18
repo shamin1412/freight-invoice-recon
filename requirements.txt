@@ -1,0 +1,9 @@
+anthropic>=2.10
+pydantic>=2.13
+streamlit>=1.50
+pandas>=2.2
+reportlab>=4.0
+pypdfium2>=4.30
+pillow>=10.0
+numpy>=1.26
+pytest>=8.0

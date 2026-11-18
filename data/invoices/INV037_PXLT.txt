@@ -1,0 +1,20 @@
+PRAIRIE EXPRESS LTL                             FREIGHT BILL / INVOICE
+DEPT 4410  PO BOX 9187  DES MOINES IA 50306     INVOICE NO: PX-INV-0098276
+PH (515) 555-0199                               INV DATE  : 13OCT26
+                                                PRO NO    : 3104458174
+==============================================================================
+SHIPPER : Larkspur Home Goods - Joliet DC     CONSIGNEE: Cobalt Kitchen Supply
+          1450 Laraway Rd                                382 Distribution Way
+          JOLIET IL 60433                                DETROIT MI 48219
+------------------------------------------------------------------------------
+P/U DATE 12OCT26   BOL LHG-JOL-1012-4480   PO 4500234068   TERMS PPD
+------------------------------------------------------------------------------
+ PCS  HU  DESCRIPTION                           CL     WEIGHT     RATE     AMOUNT
+ 104   7  Area rugs, rolled, poly-wrapped     77.5   6110 LBS    47.52   2,903.47
+          NMFC 174060-02
+          LESS DISC 69.5 PCT                                         -2,017.91
+          FUEL SURCH 25.56%                                             226.35
+                                                              ----------------
+          TOTAL DUE                                                   1,111.91
+==============================================================================
+REMIT WITH PRO NO. NET 30. SUBJECT TO PXLT 500 RULES TARIFF.
