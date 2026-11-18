@@ -4,7 +4,6 @@
 """
 from __future__ import annotations
 
-import base64
 import json
 import os
 import tempfile
@@ -61,9 +60,12 @@ def replay(arm: str):
 
 def show_document(path: Path):
     if path.suffix == ".pdf":
-        b64 = base64.b64encode(path.read_bytes()).decode()
-        st.markdown(f'<iframe src="data:application/pdf;base64,{b64}" width="100%" height="720" style="border:1px solid #ddd"></iframe>',
-                    unsafe_allow_html=True)
+        import pypdfium2 as pdfium
+
+        doc = pdfium.PdfDocument(str(path))
+        for i in range(len(doc)):
+            st.image(doc[i].render(scale=1.6).to_pil(), use_container_width=True)
+        doc.close()
         st.download_button("Download PDF", path.read_bytes(), file_name=path.name)
     else:
         st.code(path.read_text(), language=None)
@@ -74,7 +76,7 @@ summary = load_summary()
 arms = available_arms()
 
 st.title("Touchless Freight Invoice Reconciliation")
-st.caption("Claude extracts each invoice into a Pydantic schema. A SQL/Python rule engine checks it against contracted "
+st.caption("An LLM (Claude or Groq) extracts each invoice into a Pydantic schema. A SQL/Python rule engine checks it against contracted "
            "rates, the DOE fuel table, the accessorial schedule and the BOL log. Clean invoices within 1% are approved "
            "without a human; the rest get a dispute draft citing the contract clause.")
 
@@ -85,13 +87,13 @@ with tab_over:
     real = [a for a in ("baseline", "refined") if a in summary]
     if not real:
         st.warning("No live eval run yet. Showing the rule-engine check on answer-key data only. "
-                   "Run `python -m eval.run_eval` with ANTHROPIC_API_KEY set to produce real metrics.")
+                   "Run `python -m eval.run_eval` with GROQ_API_KEY or ANTHROPIC_API_KEY set to produce real metrics.")
     show = real or [a for a in ("oracle",) if a in summary]
     if show:
         main_arm = "refined" if "refined" in show else show[0]
         m = summary[main_arm]
         b = summary.get("baseline")
-        st.subheader(f"{'Refined prompt + rule engine' if main_arm == 'refined' else main_arm} · {m['invoices']} invoices"
+        st.subheader(f"{ {'refined': 'Refined prompt + rule engine', 'baseline': 'Baseline prompt (LLM judge)', 'oracle': 'Rule engine on answer-key data (engine check)'}[main_arm]} · {m['invoices']} invoices"
                      + (f" · {m.get('provider', '')} {m.get('model')}" if m.get("model") else ""))
         c = st.columns(4)
 
@@ -172,7 +174,7 @@ with tab_queue:
                                     f"  _{f['clause_ref'] or ''}_ {('“' + f['clause_text'] + '”') if f['clause_text'] else ''}")
                     if d["draft"]:
                         st.markdown("**Dispute draft**")
-                        st.code(d["draft"], language=None)
+                        st.code(d["draft"], language=None, wrap_lines=True)
                 elif p.get("findings"):
                     st.markdown("**LLM reasons**")
                     for x in p["findings"]:
@@ -223,7 +225,7 @@ with tab_live:
             draft = draft_dispute(r, inv)
             c2.json(r.to_dict())
             if draft:
-                st.code(draft, language=None)
+                st.code(draft, language=None, wrap_lines=True)
 
 # ---------------------------------------------------------------- Reference
 with tab_ref:
