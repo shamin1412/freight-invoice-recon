@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 11.81,
+  "reasons": [
+   "Fuel surcharge percentage (30.5%) exceeds the contract rate derived from DOE diesel price ($3.702) which maps to 26.0% per the fuel table.",
+   "Resulting fuel surcharge amount ($80.07) is $11.81 higher than the contract\u2011allowed amount ($68.26).",
+   "Total invoice ($342.61) is more than 1% above the contract\u2011supported total ($330.80)."
+  ],
+  "dispute_summary": "Fuel surcharge applied at 30.5% instead of the contract\u2011specified 26.0% for the pickup week, resulting in an overcharge."
+ },
+ "error": null,
+ "seconds": 77.947,
+ "in": 3366,
+ "out": 765
+}

@@ -1,0 +1,13 @@
+{
+ "file": "INV022_SMFB.txt",
+ "data": null,
+ "error": "api_error 400: Error code: 400 - {'error': {'message': \"Generated JSON does not match the expected schema. Please adjust your prompt. See 'failed_generation' for more details. Error: jsonschema: '/accessorials/0/code' does not validate with /properties/accessorials/items/$ref/properties/code/enum: value must be on",
+ "ocr_used": false,
+ "seconds": 9.983,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:28:50.877264+00:00"
+}

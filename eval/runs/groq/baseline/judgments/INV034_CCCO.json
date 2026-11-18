@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 1279.15,
+  "reasons": [
+   "Invoice number CCC-2026-1153 has been previously received and paid for the same PRO/BOL.",
+   "Policy Sec. 10.2 prohibits duplicate billing."
+  ],
+  "dispute_summary": "Duplicate invoice for PRO/BOL already billed."
+ },
+ "error": null,
+ "seconds": 12.124,
+ "in": 2330,
+ "out": 385
+}

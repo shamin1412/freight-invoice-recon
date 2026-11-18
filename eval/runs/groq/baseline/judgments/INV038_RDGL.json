@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 1.23,
+  "reasons": [
+   "Fuel surcharge percentage is incorrect per contract schedule.",
+   "Total invoiced exceeds contract-supported amount by $1.23."
+  ],
+  "dispute_summary": "Fuel surcharge percentage applied (26.6%) does not match contract table rate for the pickup week (26.0%). This results in an overcharge of $1.23."
+ },
+ "error": null,
+ "seconds": 28.174,
+ "in": 3318,
+ "out": 515
+}

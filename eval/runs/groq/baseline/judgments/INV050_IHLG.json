@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 275.0,
+  "reasons": [
+   "Accessorial code LAY requires authorization per Schedule C, but BOL shows no authorized accessorials.",
+   "Invoice total exceeds contract-supported amount by $275, which is more than 1% over."
+  ],
+  "dispute_summary": "Layover accessorial not authorized on BOL; not listed as payable without authorization."
+ },
+ "error": null,
+ "seconds": 46.841,
+ "in": 2595,
+ "out": 385
+}

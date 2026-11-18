@@ -1,0 +1,58 @@
+{
+ "file": "INV040_RDGL.pdf",
+ "data": {
+  "carrier_name": "Ridgeline Freight Lines, Inc.",
+  "carrier_scac": "RDGL",
+  "invoice_number": "4418350-5",
+  "invoice_date": "2026-10-13",
+  "pro_number": "4418350-5",
+  "bol_number": "LHG-JOL-1007-7616",
+  "po_number": "4500220984",
+  "ship_date": "2026-10-07",
+  "origin_city": "JOLIET",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "DES MOINES",
+  "dest_state": "IA",
+  "dest_zip": "50313",
+  "mode": "LTL",
+  "billed_weight_lbs": 5220.0,
+  "freight_class": "77.5",
+  "miles": null,
+  "linehaul_gross": 2547.88,
+  "discount_pct": 71.0,
+  "discount_amount": 1808.99,
+  "linehaul_amount": 738.89,
+  "fuel_surcharge_pct": 26.5,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 195.81,
+  "accessorials": [
+   {
+    "code": "RES",
+    "description": "RESIDENTIAL DELIVERY",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 118.0
+   },
+   {
+    "code": "LGD",
+    "description": "LIFTGATE SERVICE - DEST",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 92.0
+   }
+  ],
+  "total_due": 1144.7,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": false,
+ "seconds": 10.972,
+ "input_tokens": 2441,
+ "output_tokens": 928,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:25:07.125023+00:00"
+}

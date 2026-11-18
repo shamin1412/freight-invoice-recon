@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 22.96,
+  "reasons": [
+   "Fuel surcharge per mile calculated per contract is $0.46 (rounded), not $0.54 as billed.",
+   "Invoice total $1,304.98 is $22.96 above the contract-supported total of $1,282.02, exceeding the 1% tolerance."
+  ],
+  "dispute_summary": "Fuel surcharge amount exceeds contract calculation."
+ },
+ "error": null,
+ "seconds": 16.189,
+ "in": 2077,
+ "out": 416
+}

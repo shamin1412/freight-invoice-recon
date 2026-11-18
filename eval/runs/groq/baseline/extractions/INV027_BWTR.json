@@ -1,0 +1,51 @@
+{
+ "file": "INV027_BWTR.pdf",
+ "data": {
+  "carrier_name": "Sivewater Transport Co. - LTL & Regional Freight",
+  "carrier_scac": null,
+  "invoice_number": "26-011474",
+  "invoice_date": "2026-10-06",
+  "pro_number": "BWT201 18062",
+  "bol_number": "LHG-SAV-0930-2031",
+  "po_number": "4500251733",
+  "ship_date": "2026-09-30",
+  "origin_city": "Savannah",
+  "origin_state": "GA",
+  "origin_zip": "31407",
+  "dest_city": "Nashville",
+  "dest_state": "TN",
+  "dest_zip": "37210",
+  "mode": "LTL",
+  "billed_weight_lbs": 1415.0,
+  "freight_class": null,
+  "miles": null,
+  "linehaul_gross": 1625.13,
+  "discount_pct": 72.5,
+  "discount_amount": 1178.22,
+  "linehaul_amount": 446.91,
+  "fuel_surcharge_pct": 27.56,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 123.17,
+  "accessorials": [
+   {
+    "code": "LAD",
+    "description": "Limited access",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 98.0
+   }
+  ],
+  "total_due": 668.08,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": true,
+ "seconds": 33.224,
+ "input_tokens": 1353,
+ "output_tokens": 909,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:09:05.759106+00:00"
+}

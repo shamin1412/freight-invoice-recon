@@ -1,0 +1,13 @@
+{
+ "file": "INV040_RDGL.pdf",
+ "data": null,
+ "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199987, Requested 2496. Please try again in 17m52.656s. Need more tokens? Upgrade to Dev T",
+ "ocr_used": false,
+ "seconds": 0.395,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:30:01.774630+00:00"
+}

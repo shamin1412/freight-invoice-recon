@@ -1,0 +1,51 @@
+{
+ "file": "INV022_SMFB.txt",
+ "data": {
+  "carrier_name": "Summit Flatbed",
+  "carrier_scac": "SMFB",
+  "invoice_number": "SMF-77237",
+  "invoice_date": "2026-10-02",
+  "pro_number": "SF2604166",
+  "bol_number": "LHG-JOL-0928-4004",
+  "po_number": "4500218484",
+  "ship_date": "2026-09-28",
+  "origin_city": "JOLIET",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "COLUMBUS",
+  "dest_state": "OH",
+  "dest_zip": "43207",
+  "mode": "TL",
+  "billed_weight_lbs": 26840.0,
+  "freight_class": null,
+  "miles": 334,
+  "linehaul_gross": 1400.0,
+  "discount_pct": null,
+  "discount_amount": null,
+  "linehaul_amount": 1400.0,
+  "fuel_surcharge_pct": null,
+  "fuel_surcharge_per_mile": 0.5,
+  "fuel_surcharge_amount": 167.0,
+  "accessorials": [
+   {
+    "code": "TARP",
+    "description": "1 EA",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 100.0
+   }
+  ],
+  "total_due": 0.0,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": false,
+ "seconds": 8.027,
+ "input_tokens": 2321,
+ "output_tokens": 947,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:21:47.734289+00:00"
+}

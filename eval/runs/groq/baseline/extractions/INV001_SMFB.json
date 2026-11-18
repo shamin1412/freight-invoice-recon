@@ -1,0 +1,51 @@
+{
+ "file": "INV001_SMFB.txt",
+ "data": {
+  "carrier_name": "SMFB",
+  "carrier_scac": "SMFB",
+  "invoice_number": "SMF-77197",
+  "invoice_date": "2026-09-16",
+  "pro_number": "SF2604109",
+  "bol_number": null,
+  "po_number": "4500251451",
+  "ship_date": "2026-09-15",
+  "origin_city": "JOLIET",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "COLUMBUS",
+  "dest_state": "OH",
+  "dest_zip": "43207",
+  "mode": "TL",
+  "billed_weight_lbs": 26200.0,
+  "freight_class": null,
+  "miles": 334,
+  "linehaul_gross": null,
+  "discount_pct": null,
+  "discount_amount": null,
+  "linehaul_amount": 1400.0,
+  "fuel_surcharge_pct": null,
+  "fuel_surcharge_per_mile": 0.49,
+  "fuel_surcharge_amount": 163.66,
+  "accessorials": [
+   {
+    "code": "OTHER",
+    "description": "FUEL",
+    "quantity": 334.0,
+    "rate": 0.49,
+    "amount": 163.66
+   }
+  ],
+  "total_due": 1563.66,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": false,
+ "seconds": 2.642,
+ "input_tokens": 1441,
+ "output_tokens": 754,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:04:53.388459+00:00"
+}

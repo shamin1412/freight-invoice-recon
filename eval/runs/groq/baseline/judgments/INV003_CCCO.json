@@ -1,0 +1,17 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul amount matches Contract Schedule A for the 287\u2011mile lane ($1150).",
+   "Fuel surcharge calculated per contract formula using diesel price $3.698 (week of 2026\u201109\u201114) results in $0.45 per mile \u00d7 287 miles = $129.15, matching the invoice.",
+   "Total invoice $1279.15 equals the sum of linehaul and fuel surcharge; within 1% of contract amount.",
+   "Weight billed matches BOL weight; no accessorials were charged; no duplicate invoice detected."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 1.409,
+ "in": 1860,
+ "out": 343
+}

@@ -1,0 +1,17 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice matches BOL details (weight, dates, origin/destination, PO, authorized accessorial LAD).",
+   "Discount and fuel surcharge calculations align with contract percentages.",
+   "No duplicate billing or unauthorized charges detected.",
+   "Total due is within 1% of the contract-supported amount."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 8.509,
+ "in": 1349,
+ "out": 294
+}
