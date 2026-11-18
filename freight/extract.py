@@ -1,4 +1,4 @@
-"""Invoice extraction with Claude structured outputs (Pydantic).
+"""Invoice extraction with LLM structured outputs (Pydantic). Claude or Groq, see freight/llm.py.
 
 Two prompts are provided so the eval can compare them:
 
@@ -10,17 +10,15 @@ Both use the same output schema, so differences in accuracy come from the prompt
 """
 from __future__ import annotations
 
-import base64
 import os
-import time
 from dataclasses import dataclass
 from pathlib import Path
 
-import anthropic
-
+from freight.llm import default_model, provider, structured
 from freight.schemas import InvoiceExtraction
 
-MODEL = os.environ.get("FREIGHT_MODEL", "claude-opus-5-5")
+PROVIDER = provider()
+MODEL = default_model(PROVIDER)
 EFFORT = os.environ.get("FREIGHT_EFFORT", "low")
 
 BASELINE_PROMPT = "Extract the data from this freight invoice."
@@ -79,42 +77,15 @@ class ExtractionResult:
     seconds: float
     input_tokens: int = 0
     output_tokens: int = 0
+    ocr_used: bool = False
 
 
-def document_block(path: Path) -> dict:
-    if path.suffix.lower() == ".pdf":
-        b64 = base64.standard_b64encode(path.read_bytes()).decode()
-        return {"type": "document", "source": {"type": "base64", "media_type": "application/pdf", "data": b64}}
-    return {"type": "text", "text": f"<invoice_document filename=\"{path.name}\">\n{path.read_text()}\n</invoice_document>"}
-
-
-def extract(path: str | Path, prompt: str = REFINED_PROMPT, client: anthropic.Anthropic | None = None,
-            model: str = MODEL, effort: str = EFFORT) -> ExtractionResult:
+def extract(path: str | Path, prompt: str = REFINED_PROMPT, client=None, model: str | None = None,
+            effort: str = EFFORT, prov: str | None = None) -> ExtractionResult:
+    """Extract one invoice with the configured provider (Claude or Groq)."""
     path = Path(path)
-    client = client or anthropic.Anthropic()
-    t0 = time.perf_counter()
-    try:
-        resp = client.messages.parse(
-            model=model,
-            max_tokens=16000,
-            system=prompt,
-            messages=[{"role": "user", "content": [document_block(path),
-                                                   {"type": "text", "text": "Extract this invoice."}]}],
-            output_config={"effort": effort},
-            output_format=InvoiceExtraction,
-        )
-        dt_s = time.perf_counter() - t0
-        if resp.stop_reason == "refusal":
-            return ExtractionResult(path.name, None, "refusal", dt_s)
-        if resp.stop_reason == "max_tokens":
-            return ExtractionResult(path.name, None, "max_tokens", dt_s)
-        return ExtractionResult(path.name, resp.parsed_output, None, dt_s,
-                                resp.usage.input_tokens, resp.usage.output_tokens)
-    except anthropic.RateLimitError as e:
-        return ExtractionResult(path.name, None, f"rate_limited: {e}", time.perf_counter() - t0)
-    except anthropic.APIStatusError as e:
-        return ExtractionResult(path.name, None, f"api_error {e.status_code}: {e.message}", time.perf_counter() - t0)
-    except anthropic.APIConnectionError as e:
-        return ExtractionResult(path.name, None, f"connection_error: {e}", time.perf_counter() - t0)
-    except Exception as e:  # schema validation etc.
-        return ExtractionResult(path.name, None, f"{type(e).__name__}: {e}", time.perf_counter() - t0)
+    if client is not None and prov is None:
+        prov = "claude" if client.__class__.__module__.startswith("anthropic") else "groq"
+    r = structured(prompt, InvoiceExtraction, doc=path, text="Extract this invoice.", model=model, effort=effort,
+                   prov=prov, client=client)
+    return ExtractionResult(path.name, r.parsed, r.error, r.seconds, r.input_tokens, r.output_tokens, r.ocr_used)

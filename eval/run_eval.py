@@ -24,10 +24,9 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-import anthropic
-
 from freight import db
-from freight.extract import BASELINE_PROMPT, REFINED_PROMPT, MODEL, EFFORT, extract
+from freight.extract import BASELINE_PROMPT, REFINED_PROMPT, EFFORT, extract
+from freight.llm import default_model, provider, structured
 from freight.pricing import RateBook
 from freight.reconcile import Reconciler
 from freight.schemas import AuditDecision
@@ -90,23 +89,16 @@ def judge_context(conn, rb: RateBook, ex: dict, prior: list[dict]) -> str:
     return "\n\n".join(parts)
 
 
-def judge(client, ctx: str, model: str, effort: str):
-    t0 = time.perf_counter()
-    try:
-        r = client.messages.parse(model=model, max_tokens=16000, system=JUDGE_PROMPT,
-                                  messages=[{"role": "user", "content": ctx}],
-                                  output_config={"effort": effort}, output_format=AuditDecision)
-        if r.stop_reason != "end_turn" or r.parsed_output is None:
-            return None, f"stop_reason={r.stop_reason}", time.perf_counter() - t0, 0, 0
-        return r.parsed_output.model_dump(), None, time.perf_counter() - t0, r.usage.input_tokens, r.usage.output_tokens
-    except anthropic.APIError as e:
-        return None, f"{type(e).__name__}: {e}", time.perf_counter() - t0, 0, 0
+def judge(ctx: str, model: str, effort: str, prov: str):
+    r = structured(JUDGE_PROMPT, AuditDecision, text=ctx, model=model, effort=effort, prov=prov)
+    if r.parsed is None:
+        return None, r.error, r.seconds, 0, 0
+    return r.parsed.model_dump(), None, r.seconds, r.input_tokens, r.output_tokens
 
 
-def run_extractions(arm: str, files: list[Path], prompt: str, model: str, effort: str, workers: int, fresh: bool):
-    d = RUNS / arm / "extractions"
+def run_extractions(arm: str, files: list[Path], prompt: str, model: str, effort: str, workers: int, fresh: bool, prov: str):
+    d = RUNS / prov / arm / "extractions"
     d.mkdir(parents=True, exist_ok=True)
-    client = anthropic.Anthropic(max_retries=4)
 
     def one(p: Path):
         out = d / (p.stem + ".json")
@@ -114,10 +106,10 @@ def run_extractions(arm: str, files: list[Path], prompt: str, model: str, effort
             cached = json.loads(out.read_text())
             if cached.get("data") is not None:
                 return cached
-        r = extract(p, prompt=prompt, client=client, model=model, effort=effort)
-        rec = {"file": p.name, "data": r.data.model_dump() if r.data else None, "error": r.error,
+        r = extract(p, prompt=prompt, model=model, effort=effort, prov=prov)
+        rec = {"file": p.name, "data": r.data.model_dump() if r.data else None, "error": r.error, "ocr_used": r.ocr_used,
                "seconds": round(r.seconds, 3), "input_tokens": r.input_tokens, "output_tokens": r.output_tokens,
-               "model": model, "effort": effort, "at": dt.datetime.now(dt.timezone.utc).isoformat()}
+               "provider": prov, "model": model, "effort": effort, "at": dt.datetime.now(dt.timezone.utc).isoformat()}
         out.write_text(json.dumps(rec, indent=1))
         print(f"  [{arm}] {p.name}: {'ok' if r.data else r.error} ({r.seconds:.1f}s)", flush=True)
         return rec
@@ -130,11 +122,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--arms", default="baseline,refined")
     ap.add_argument("--limit", type=int, default=None)
-    ap.add_argument("--model", default=MODEL)
+    ap.add_argument("--provider", default=provider(), choices=["claude", "groq"])
+    ap.add_argument("--model", default=None)
     ap.add_argument("--effort", default=EFFORT)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--fresh", action="store_true", help="ignore cached API outputs")
     args = ap.parse_args()
+    args.model = args.model or default_model(args.provider)
+    print(f"provider={args.provider} model={args.model} effort={args.effort}")
 
     key = json.loads((ROOT / "data" / "answer_key.json").read_text())
     key.sort(key=lambda k: k["received_order"])
@@ -157,7 +152,7 @@ def main():
                               "overcharge": r.overcharge, "findings": [f.rule for f in r.findings],
                               "seconds": time.perf_counter() - t0, "in_tok": 0, "out_tok": 0})
         elif arm == "refined":
-            exs = run_extractions(arm, files, REFINED_PROMPT, args.model, args.effort, args.workers, args.fresh)
+            exs = run_extractions(arm, files, REFINED_PROMPT, args.model, args.effort, args.workers, args.fresh, args.provider)
             rec = Reconciler(conn)
             for k, e in zip(key, exs):
                 if e["data"] is None:
@@ -171,11 +166,10 @@ def main():
                               "seconds": e["seconds"] + (time.perf_counter() - t0),
                               "in_tok": e["input_tokens"], "out_tok": e["output_tokens"]})
         elif arm == "baseline":
-            exs = run_extractions(arm, files, BASELINE_PROMPT, args.model, args.effort, args.workers, args.fresh)
+            exs = run_extractions(arm, files, BASELINE_PROMPT, args.model, args.effort, args.workers, args.fresh, args.provider)
             rb = RateBook(conn)
-            jd = RUNS / arm / "judgments"
+            jd = RUNS / args.provider / arm / "judgments"
             jd.mkdir(parents=True, exist_ok=True)
-            client = anthropic.Anthropic(max_retries=4)
 
             def one(i):
                 k, e = key[i], exs[i]
@@ -189,7 +183,7 @@ def main():
                 prior = [x["data"] for x in exs[:i] if x["data"]]
                 local = db.connect()
                 ctx = judge_context(local, RateBook(local), e["data"], prior)
-                d, err, secs, it, ot = judge(client, ctx, args.model, args.effort)
+                d, err, secs, it, ot = judge(ctx, args.model, args.effort, args.provider)
                 j = {"decision": d, "error": err, "seconds": round(secs, 3), "in": it, "out": ot}
                 out.write_text(json.dumps(j, indent=1))
                 print(f"  [baseline-judge] {k['file']}: {d['decision'] if d else err}", flush=True)
@@ -207,7 +201,9 @@ def main():
             raise SystemExit(f"unknown arm {arm}")
 
         m = score(key, preds)
-        m["model"], m["effort"] = (args.model, args.effort) if arm != "oracle" else (None, None)
+        m["provider"], m["model"], m["effort"] = (args.provider, args.model, args.effort) if arm != "oracle" else (None, None, None)
+        if args.provider != "claude" and arm != "oracle":
+            m["est_cost_usd"] = None  # token counts are reported; see the provider's price list
         summary[arm] = m
         (RESULTS / f"{arm}_predictions.json").write_text(json.dumps(preds, indent=1, default=str))
         print(json.dumps({k: v for k, v in m.items() if k != "per_field"}, indent=1))

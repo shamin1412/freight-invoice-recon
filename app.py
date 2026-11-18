@@ -92,7 +92,7 @@ with tab_over:
         m = summary[main_arm]
         b = summary.get("baseline")
         st.subheader(f"{'Refined prompt + rule engine' if main_arm == 'refined' else main_arm} · {m['invoices']} invoices"
-                     + (f" · {m.get('model')}" if m.get("model") else ""))
+                     + (f" · {m.get('provider', '')} {m.get('model')}" if m.get("model") else ""))
         c = st.columns(4)
 
         def delta(k, pct=True):
@@ -112,7 +112,8 @@ with tab_over:
         c[0].metric("Decision accuracy", f"{m['decision_accuracy'] * 100:.1f}%", delta("decision_accuracy"))
         c[1].metric("Bad invoices auto-approved", m["bad_invoices_auto_approved"], delta_color="off")
         c[2].metric("Clean invoices wrongly flagged", m["clean_invoices_flagged"], delta_color="off")
-        c[3].metric("API cost for 50 invoices", f"${m['est_cost_usd']:.2f}", delta_color="off")
+        c[3].metric("API cost for 50 invoices", f"${m['est_cost_usd']:.2f}" if m.get("est_cost_usd") is not None
+                    else f"{(m['input_tokens'] + m['output_tokens']) / 1000:,.0f}k tokens", delta_color="off")
         st.markdown("#### All arms")
         md = (RES / "results.md").read_text() if (RES / "results.md").exists() else ""
         st.markdown(md.split("## Field accuracy")[0].replace("# Eval results", ""))
@@ -189,10 +190,10 @@ with tab_queue:
 
 # ---------------------------------------------------------------- Live
 with tab_live:
-    st.markdown("Run one invoice through the live pipeline (Claude extraction + rule engine). Needs `ANTHROPIC_API_KEY`.")
-    has_key = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    st.markdown("Run one invoice through the live pipeline (LLM extraction + rule engine). Needs `ANTHROPIC_API_KEY` or `GROQ_API_KEY`.")
+    has_key = bool(os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("GROQ_API_KEY"))
     if not has_key:
-        st.warning("ANTHROPIC_API_KEY is not set in this environment.")
+        st.warning("No ANTHROPIC_API_KEY or GROQ_API_KEY in this environment.")
     src = st.radio("Source", ["Sample invoice", "Upload"], horizontal=True)
     path = None
     if src == "Sample invoice":

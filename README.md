@@ -1,13 +1,13 @@
 # Touchless Freight Invoice Reconciliation
 
 An end-to-end pipeline that reads messy carrier freight invoices (PDFs, scanned PDFs, fixed-width
-printouts, emails and EDI 210), extracts them with Claude into a Pydantic schema, reconciles them
+printouts, emails and EDI 210), extracts them with an LLM (Claude or Groq) into a Pydantic schema, reconciles them
 against contracted rates and the Bill of Lading log in SQLite, and either approves them without a
 human ("touchless") or drafts a dispute that cites the exact contract clause.
 
 ```
 invoice (PDF / scan / text / EDI 210)
-   │  Claude structured output  ->  InvoiceExtraction (Pydantic)
+   │  LLM structured output  ->  InvoiceExtraction (Pydantic)
    ▼
 rule engine (SQLite + Python)
    ├─ match BOL / PRO in the shipment log      -> no match: EXCEPTION (human)
@@ -98,13 +98,25 @@ API outputs are cached under `eval/runs/` so results can be re-scored without ne
 pip install -r requirements.txt
 python -m synth.generate          # rebuild data/ (deterministic; already committed)
 python -m pytest -q               # offline tests: engine vs answer key, mocked Claude call
-export ANTHROPIC_API_KEY=...      # needed for extraction
+export GROQ_API_KEY=...           # or ANTHROPIC_API_KEY
 python -m eval.run_eval           # both arms, 50 invoices -> eval/results/
 streamlit run app.py              # dashboard
 ```
 
-Model and effort are configurable: `FREIGHT_MODEL` (default `claude-opus-5-5`) and `FREIGHT_EFFORT`
-(default `low`), or `--model` / `--effort` on the eval.
+### LLM provider: Claude or Groq
+
+`freight/llm.py` supports two providers behind one structured-output call. It picks Claude if
+`ANTHROPIC_API_KEY` is set, otherwise Groq if `GROQ_API_KEY` is set (override with `FREIGHT_PROVIDER` or
+`--provider`).
+
+| | Claude (`claude-opus-5-5`) | Groq (`openai/gpt-oss-120b`) |
+|---|---|---|
+| Structured output | Pydantic via `messages.parse` | strict JSON schema generated from the same Pydantic model |
+| PDFs | read natively, including scans | text layer via pdfplumber; scanned pages via Tesseract OCR (`apt install tesseract-ocr`) |
+
+The Groq models with strict structured outputs are text-only, so scanned invoices go through OCR first,
+and OCR errors are a real source of extraction misses on that path. `FREIGHT_MODEL` and `FREIGHT_EFFORT`
+(default `low`) override model and reasoning effort. Cached outputs live in `eval/runs/<provider>/`.
 
 ## Layout
 
