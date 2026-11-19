@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 92.0,
+  "reasons": [
+   "Accessorial code LAD is not listed in Schedule C (LGD is the liftgate service entry).",
+   "All Schedule C accessorials require prior authorization; BOL shows no authorized accessorials.",
+   "Invoice total exceeds contract\u2011computed total (2760.99) by $92.00, which is >1% variance."
+  ],
+  "dispute_summary": "Unauthorized liftgate accessorial billed; code LAD does not match Schedule C entry and no authorization on BOL."
+ },
+ "error": null,
+ "seconds": 27.918,
+ "in": 3420,
+ "out": 612
+}

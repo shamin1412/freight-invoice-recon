@@ -1,7 +1,16 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199970, Requested 4318. Please try again in 30m52.416s. Need more tokens? Upgrade to Dev T",
- "seconds": 0.362,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 92.0,
+  "reasons": [
+   "Accessorial code on invoice (LAD) does not match authorized accessorial (LGD) in BOL.",
+   "Amount billed for LAD ($92) does not match Schedule C rate for LAD ($105).",
+   "Unauthorized accessorial charge should not be payable."
+  ],
+  "dispute_summary": "Accessorial charge is listed as code LAD (Limited Access Delivery) with amount $92. Schedule C lists LAD at $105 and requires authorization; the BOL authorizes LGD (Liftgate at delivery) at $92. Therefore the billed accessorial is not authorized nor at the correct rate."
+ },
+ "error": null,
+ "seconds": 27.589,
+ "in": 3375,
+ "out": 695
 }

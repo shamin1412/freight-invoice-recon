@@ -1,7 +1,15 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199972, Requested 4467. Please try again in 31m57.648s. Need more tokens? Upgrade to Dev T",
- "seconds": 0.5,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 18.85,
+  "reasons": [
+   "Fuel surcharge percentage (30.54%) does not match the contract table rate (27.04%) for the pickup week.",
+   "Total due exceeds contract\u2011supported amount by $18.85, which is >1% of the correct total."
+  ],
+  "dispute_summary": "Fuel surcharge applied at 30.54% instead of the contract\u2011derived 27.04% for the week of 9/21/2026, resulting in an overcharge."
+ },
+ "error": null,
+ "seconds": 33.471,
+ "in": 3554,
+ "out": 501
 }

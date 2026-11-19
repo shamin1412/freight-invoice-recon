@@ -1,13 +1,51 @@
 {
  "file": "INV008_PXLT.txt",
- "data": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199954, Requested 2989. Please try again in 21m11.376s. Need more tokens? Upgrade to Dev T",
+ "data": {
+  "carrier_name": "Prairie Express LTL",
+  "carrier_scac": "PXLT",
+  "invoice_number": "PX-INV-0098148",
+  "invoice_date": "2026-09-21",
+  "pro_number": "3104458060",
+  "bol_number": "LHG-JOL-0917-9419",
+  "po_number": "4500281717",
+  "ship_date": "2026-09-17",
+  "origin_city": "JOLIET",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "DETROIT",
+  "dest_state": "MI",
+  "dest_zip": "48210",
+  "mode": "LTL",
+  "billed_weight_lbs": 1400.0,
+  "freight_class": "85",
+  "miles": null,
+  "linehaul_gross": 1065.12,
+  "discount_pct": 69.5,
+  "discount_amount": 740.26,
+  "linehaul_amount": 324.86,
+  "fuel_surcharge_pct": 24.48,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 79.53,
+  "accessorials": [
+   {
+    "code": "NOA",
+    "description": "APPT/NOTIFY",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 25.0
+   }
+  ],
+  "total_due": 429.39,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
  "ocr_used": false,
- "seconds": 0.389,
- "input_tokens": 0,
- "output_tokens": 0,
+ "seconds": 22.211,
+ "input_tokens": 2242,
+ "output_tokens": 964,
  "provider": "groq",
  "model": "openai/gpt-oss-120b",
  "effort": "low",
- "at": "2026-11-18T06:30:15.762347+00:00"
+ "at": "2026-11-19T06:58:07.709765+00:00"
 }

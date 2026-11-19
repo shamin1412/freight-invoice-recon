@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 515.5,
+  "reasons": [
+   "Accessorial code 'OTHER' for fuel is not listed in Schedule C; therefore the $515.5 fuel surcharge is not payable.",
+   "Billed weight (386,550 lbs) is vastly higher than the BOL weight (18,340 lbs) and no reweigh certificate is provided; weight-based charges beyond the contract linehaul are not supported.",
+   "All other linehaul charges ($3350) match the contract rate for the lane (895xx -> 802xx)."
+  ],
+  "dispute_summary": "Fuel surcharge is not authorized (accessorial code OTHER not listed in Schedule C) and weight on invoice far exceeds BOL weight without a reweigh certificate."
+ },
+ "error": null,
+ "seconds": 13.666,
+ "in": 1944,
+ "out": 377
+}

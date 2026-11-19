@@ -1,7 +1,15 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199969, Requested 2295. Please try again in 16m18.048s. Need more tokens? Upgrade to Dev T",
- "seconds": 0.425,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "EXCEPTION",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "No matching shipment found for BOL number SF2604155 in the BOL log.",
+   "Invoice total is $0.00, but without a corresponding BOL the invoice cannot be verified."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 17.599,
+ "in": 1548,
+ "out": 130
 }

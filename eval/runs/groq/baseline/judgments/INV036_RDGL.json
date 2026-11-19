@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 1466.27,
+  "reasons": [
+   "Invoice number INV036_RDGL matches a previously received invoice INV016_RDGL for the same PRO 4418258-2 and BOL LHG-JOL-0921-5853.",
+   "According to Contract Clause 8.3, duplicate invoices are not payable."
+  ],
+  "dispute_summary": "Duplicate invoice for PRO/BOL already billed (INV016_RDGL)."
+ },
+ "error": null,
+ "seconds": 30.419,
+ "in": 3469,
+ "out": 167
+}

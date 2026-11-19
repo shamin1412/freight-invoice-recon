@@ -1,13 +1,51 @@
 {
  "file": "INV036_RDGL.pdf",
- "data": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197865, Requested 2495. Please try again in 2m35.519999999s. Need more tokens? Upgrade to ",
+ "data": {
+  "carrier_name": "Freight Lines, Inc.",
+  "carrier_scac": "RDGL",
+  "invoice_number": "INV036_RDGL",
+  "invoice_date": "2026-09-27",
+  "pro_number": "4418258-2",
+  "bol_number": "LHG-JOL-0921-5853",
+  "po_number": "4500280566",
+  "ship_date": "2026-09-21",
+  "origin_city": "JOLIET",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "ST. LOUIS",
+  "dest_state": "MO",
+  "dest_zip": "63132",
+  "mode": "TL",
+  "billed_weight_lbs": 7860.0,
+  "freight_class": "77.5",
+  "miles": null,
+  "linehaul_gross": 3761.01,
+  "discount_pct": 71.0,
+  "discount_amount": -2670.32,
+  "linehaul_amount": 1090.69,
+  "fuel_surcharge_pct": 26.0,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 283.58,
+  "accessorials": [
+   {
+    "code": "LAD",
+    "description": "LIFTGATE SERVICE - DEST",
+    "quantity": 1.0,
+    "rate": 92.0,
+    "amount": 92.0
+   }
+  ],
+  "total_due": 1466.27,
+  "is_reminder_or_copy": true,
+  "notes": null
+ },
+ "error": null,
  "ocr_used": false,
- "seconds": 0.412,
- "input_tokens": 0,
- "output_tokens": 0,
+ "seconds": 17.555,
+ "input_tokens": 1582,
+ "output_tokens": 818,
  "provider": "groq",
  "model": "openai/gpt-oss-120b",
  "effort": "low",
- "at": "2026-11-18T06:29:59.264756+00:00"
+ "at": "2026-11-19T06:42:07.344513+00:00"
 }

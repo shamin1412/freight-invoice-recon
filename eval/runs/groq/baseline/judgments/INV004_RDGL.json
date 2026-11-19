@@ -1,7 +1,18 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199979, Requested 3510. Please try again in 25m7.247999999s. Need more tokens? Upgrade to ",
- "seconds": 0.436,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice linehaul matches contract rate after discount",
+   "Fuel surcharge percentage matches DOE diesel price bracket",
+   "No unauthorized accessorials",
+   "Total due aligns with calculated amount within 1% tolerance",
+   "Shipment matches a single BOL record; no duplicate billing"
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 29.165,
+ "in": 3263,
+ "out": 314
 }

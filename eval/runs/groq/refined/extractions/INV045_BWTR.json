@@ -1,13 +1,65 @@
 {
  "file": "INV045_BWTR.pdf",
- "data": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199929, Requested 3289. Please try again in 23m10.176s. Need more tokens? Upgrade to Dev T",
+ "data": {
+  "carrier_name": "Bluewater Transport Co.",
+  "carrier_scac": "BWTR",
+  "invoice_number": "26-011512",
+  "invoice_date": "2026-10-21",
+  "pro_number": "BWT20118158",
+  "bol_number": "LHG-RNO-1020-5497",
+  "po_number": "4500290008",
+  "ship_date": "2026-10-20",
+  "origin_city": "Larkspur",
+  "origin_state": "IL",
+  "origin_zip": "60606",
+  "dest_city": "Sacramento",
+  "dest_state": "CA",
+  "dest_zip": "95815",
+  "mode": "LTL",
+  "billed_weight_lbs": 350.0,
+  "freight_class": "85",
+  "miles": null,
+  "linehaul_gross": 340.34,
+  "discount_pct": 72.5,
+  "discount_amount": 206.34,
+  "linehaul_amount": 134.0,
+  "fuel_surcharge_pct": 27.04,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 36.23,
+  "accessorials": [
+   {
+    "code": "RES",
+    "description": "Residential delivery",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 122.0
+   },
+   {
+    "code": "LGD",
+    "description": "Lift gate - delivery",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 96.0
+   },
+   {
+    "code": "NOA",
+    "description": "Notification",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 32.0
+   }
+  ],
+  "total_due": 420.23,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
  "ocr_used": false,
- "seconds": 0.4,
- "input_tokens": 0,
- "output_tokens": 0,
+ "seconds": 24.586,
+ "input_tokens": 2376,
+ "output_tokens": 944,
  "provider": "groq",
  "model": "openai/gpt-oss-120b",
  "effort": "low",
- "at": "2026-11-18T06:30:26.571639+00:00"
+ "at": "2026-11-19T07:03:37.934582+00:00"
 }

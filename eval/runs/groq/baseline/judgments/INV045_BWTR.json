@@ -1,7 +1,16 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199958, Requested 5163. Please try again in 36m52.272s. Need more tokens? Upgrade to Dev T",
- "seconds": 0.316,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 96.0,
+  "reasons": [
+   "Accessorial code LAD is not listed in the BOL's authorized_accessorials (authorized: RES,LGD,NOA).",
+   "Contract Schedule C requires authorization for LAD; no authorization noted on BOL.",
+   "All other charges (linehaul, fuel surcharge, RES, NOA) are consistent with contract terms."
+  ],
+  "dispute_summary": "LAD accessorial (Lift gate - delivery) is not authorized on the BOL; only LGD is permitted. The $96.00 charged for LAD is not payable."
+ },
+ "error": null,
+ "seconds": 36.991,
+ "in": 4275,
+ "out": 636
 }

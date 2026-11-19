@@ -1,7 +1,18 @@
 {
- "decision": null,
- "error": "api_error 429: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m7pjm77xekz8m9vph00aw4rr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199976, Requested 4388. Please try again in 31m25.247999999s. Need more tokens? Upgrade to",
- "seconds": 0.383,
- "in": 0,
- "out": 0
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul calculated from base tariff ($76.08/CWT) for 14 CWT = $1065.12; 69.5% discount yields $325.96, matching invoice linehaul amount ($324.86) within rounding.",
+   "Fuel surcharge percentage (24.48%) matches DOE diesel price bracket for 2026\u201109\u201114; applied to net linehaul gives $79.71, matching invoice $79.53 within rounding.",
+   "Accessorial \u2018APPT/NOTIFY\u2019 is listed in Schedule C as NOA at $25 and is authorized on the BOL; amount matches invoice.",
+   "Invoice total $429.39 is within 1% of the contract\u2011supported total (~$430.67).",
+   "No duplicate billing or missing shipment; BOL record matches invoice details."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 24.501,
+ "in": 3445,
+ "out": 584
 }
