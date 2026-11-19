@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 330.82,
+  "reasons": [
+   "Linehaul amount does not match contract calculation (base rate $58.10/CWT for class 77.5, weight 7,850\u202flb \u2192 $4,561.85 gross, 71% discount \u2192 $1,322.94 net). Invoice linehaul $5,467.21 is $4,144.27 too high.",
+   "Total invoice $1,997.72 is $330.82 above the contract\u2011supported total ($1,666.90).",
+   "Overage exceeds the 1% tolerance threshold; therefore the invoice must be disputed."
+  ],
+  "dispute_summary": "Invoice total $1,997.72 exceeds contract\u2011supported amount $1,666.90 by $330.82 (\u224819.8% over). Linehaul charge is far above the discounted tariff rate and fuel surcharge is correctly applied but does not offset the overcharge."
+ },
+ "error": null,
+ "seconds": 28.02,
+ "in": 3269,
+ "out": 711
+}

@@ -1,0 +1,14 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 824.83,
+  "reasons": [
+   "Duplicate invoice for shipment already billed (PRO BWT20118011, BOL LHG-RNO-0915-1091)."
+  ],
+  "dispute_summary": "Invoice is a duplicate of invoice 26-011423 for the same PRO/BOL."
+ },
+ "error": null,
+ "seconds": 32.633,
+ "in": 3707,
+ "out": 152
+}

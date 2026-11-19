@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul calculated from base tariff ($76.08/CWT) for 14 CWT = $1065.12; 69.5% discount yields $325.96, matching invoice linehaul amount ($324.86) within rounding.",
+   "Fuel surcharge percentage (24.48%) matches DOE diesel price bracket for 2026\u201109\u201114; applied to net linehaul gives $79.71, matching invoice $79.53 within rounding.",
+   "Accessorial \u2018APPT/NOTIFY\u2019 is listed in Schedule C as NOA at $25 and is authorized on the BOL; amount matches invoice.",
+   "Invoice total $429.39 is within 1% of the contract\u2011supported total (~$430.67).",
+   "No duplicate billing or missing shipment; BOL record matches invoice details."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 24.501,
+ "in": 3445,
+ "out": 584
+}

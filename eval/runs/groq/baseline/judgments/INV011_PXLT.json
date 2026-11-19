@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice linehaul matches base tariff for class 70 weight 810 lbs.",
+   "Discount and fuel surcharge percentages correctly applied per contract.",
+   "Net linehaul exceeds minimum charge.",
+   "No accessorials charged.",
+   "Shipment matches BOL log; not a duplicate."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 29.328,
+ "in": 3496,
+ "out": 368
+}

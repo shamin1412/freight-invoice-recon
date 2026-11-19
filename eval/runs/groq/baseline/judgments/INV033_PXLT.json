@@ -1,0 +1,17 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 256.23,
+  "reasons": [
+   "Billed linehaul $2304.47 is higher than contract\u2011computed $2171.50 (weight 9800\u202flb, class 125, 69.5% discount).",
+   "Fuel surcharge $586.26 exceeds 25.44% of net linehaul ($552.00) per contract method.",
+   "Accessorial INSIDE DEL $89.00 is not listed as authorized on the BOL (authorized_accessorials empty).",
+   "Total invoice $2979.73 is ~9.4% above the contract\u2011supported total $2723.50, exceeding the 1% tolerance."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 33.486,
+ "in": 3948,
+ "out": 595
+}

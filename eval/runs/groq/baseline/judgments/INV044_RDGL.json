@@ -1,0 +1,12 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 27.766,
+ "in": 3398,
+ "out": 327
+}

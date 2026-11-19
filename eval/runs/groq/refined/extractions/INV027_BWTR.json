@@ -1,0 +1,51 @@
+{
+ "file": "INV027_BWTR.pdf",
+ "data": {
+  "carrier_name": "Bluewater Transport",
+  "carrier_scac": "BWTR",
+  "invoice_number": "26-011474",
+  "invoice_date": "2026-10-06",
+  "pro_number": "BWT201 18062",
+  "bol_number": "LHG-SAV-0930-2031",
+  "po_number": null,
+  "ship_date": "2026-09-30",
+  "origin_city": "Chicago",
+  "origin_state": "IL",
+  "origin_zip": "60606",
+  "dest_city": "Nashville",
+  "dest_state": "TN",
+  "dest_zip": "37210",
+  "mode": "LTL",
+  "billed_weight_lbs": 1415.0,
+  "freight_class": "100",
+  "miles": null,
+  "linehaul_gross": 1625.13,
+  "discount_pct": 72.5,
+  "discount_amount": 1178.22,
+  "linehaul_amount": 446.91,
+  "fuel_surcharge_pct": 27.56,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 123.17,
+  "accessorials": [
+   {
+    "code": "LAD",
+    "description": "Limited access",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 98.0
+   }
+  ],
+  "total_due": 668.08,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": true,
+ "seconds": 22.628,
+ "input_tokens": 2211,
+ "output_tokens": 944,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:22:58.131890+00:00"
+}

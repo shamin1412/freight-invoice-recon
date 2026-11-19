@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 120.0,
+  "reasons": [
+   "Detention billed for full 6.5 hours instead of 4.5 chargeable hours per Clause 5.2",
+   "Invoice total is $120 above the contract-supported amount"
+  ],
+  "dispute_summary": "Detention charge exceeds free time. Contract allows 2 free hours; 6.5 hrs billed at $60/hr results in $390, but only 4.5 hrs (6.5\u20112) are payable, amounting to $270. Overcharge of $120."
+ },
+ "error": null,
+ "seconds": 16.943,
+ "in": 2322,
+ "out": 428
+}

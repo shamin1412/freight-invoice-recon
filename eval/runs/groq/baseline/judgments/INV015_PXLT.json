@@ -1,0 +1,17 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 129.25,
+  "reasons": [
+   "Freight class on invoice (85) does not match BOL class (70) and no certified weight/class adjustment provided (Art. 9(c)).",
+   "Linehaul amount $814.02 exceeds contract\u2011computed net linehaul $710.65 after discount.",
+   "Fuel surcharge applied to inflated net linehaul; correct surcharge $177.30 vs invoiced $203.18.",
+   "Total due $1,017.20 is more than 1% above the contract\u2011supported amount ($887.95)."
+  ],
+  "dispute_summary": "Invoice uses freight class 85 instead of BOL class 70 without a reweigh certificate, resulting in an inflated linehaul charge. Calculated contract\u2011allowed total is $887.95; invoice total is $1,017.20, overcharge $129.25."
+ },
+ "error": null,
+ "seconds": 28.169,
+ "in": 3598,
+ "out": 643
+}

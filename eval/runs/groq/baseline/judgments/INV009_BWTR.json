@@ -1,0 +1,17 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice total $212.23 matches contract calculations (minimum linehaul $134, fuel surcharge 27.04%, authorized HAZ accessorial $42).",
+   "No duplicate billing detected.",
+   "All accessorials are authorized and listed in Schedule C.",
+   "Weight discrepancy in the invoice record does not affect the charged amount."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 65.932,
+ "in": 3443,
+ "out": 538
+}

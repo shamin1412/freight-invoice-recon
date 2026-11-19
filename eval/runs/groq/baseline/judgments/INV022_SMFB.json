@@ -1,0 +1,14 @@
+{
+ "decision": {
+  "decision": "EXCEPTION",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "No matching shipment found in BOL log for the provided invoice (BOL number is null)."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 14.458,
+ "in": 1629,
+ "out": 91
+}

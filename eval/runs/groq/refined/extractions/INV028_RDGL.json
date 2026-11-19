@@ -1,0 +1,51 @@
+{
+ "file": "INV028_RDGL.pdf",
+ "data": {
+  "carrier_name": "RIDGELINE FREIGHT LINES, INC.",
+  "carrier_scac": "RDGL",
+  "invoice_number": "44183213",
+  "invoice_date": "2026-10-05",
+  "pro_number": "4418321-3",
+  "bol_number": "LHG-SAV-1001-4182",
+  "po_number": "4500222074",
+  "ship_date": "2026-10-01",
+  "origin_city": "Savannah",
+  "origin_state": "GA",
+  "origin_zip": "31407",
+  "dest_city": "Birmingham",
+  "dest_state": "AL",
+  "dest_zip": "35211",
+  "mode": "LTL",
+  "billed_weight_lbs": 8845.0,
+  "freight_class": "125",
+  "miles": null,
+  "linehaul_gross": 7526.21,
+  "discount_pct": 71.0,
+  "discount_amount": 5343.61,
+  "linehaul_amount": 2182.6,
+  "fuel_surcharge_pct": 26.5,
+  "fuel_surcharge_per_mile": null,
+  "fuel_surcharge_amount": 578.39,
+  "accessorials": [
+   {
+    "code": "LGD",
+    "description": "LIFTGATE SERVICE - DEST",
+    "quantity": 1.0,
+    "rate": null,
+    "amount": 92.0
+   }
+  ],
+  "total_due": 2852.99,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": false,
+ "seconds": 7.643,
+ "input_tokens": 2430,
+ "output_tokens": 989,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-19T07:01:27.805403+00:00"
+}

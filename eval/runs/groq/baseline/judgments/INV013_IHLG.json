@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 122.5,
+  "reasons": [
+   "Detention charges exceed the contract free time (2 hrs) and should be billed only for 1 hr ($60), but invoice bills $180 (overcharge $120).",
+   "Fuel surcharge calculated per contract (week of 2026\u201109\u201122 diesel $3.743) is $211.28, but invoice charges $213.78 (overcharge $2.50).",
+   "Total invoice ($1693.78) is $182.50 above the contract\u2011supported amount ($1511.28), exceeding the 1% tolerance."
+  ],
+  "dispute_summary": "Detention billed for 3 hours despite only 1 hour beyond the 2\u2011hour free allowance; fuel surcharge amount is higher than contract calculation."
+ },
+ "error": null,
+ "seconds": 11.075,
+ "in": 2095,
+ "out": 509
+}

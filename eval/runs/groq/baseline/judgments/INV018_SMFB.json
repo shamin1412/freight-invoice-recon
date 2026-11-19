@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "EXCEPTION",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "No matching shipment found for BOL number SF2604155 in the BOL log.",
+   "Invoice total is $0.00, but without a corresponding BOL the invoice cannot be verified."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 17.599,
+ "in": 1548,
+ "out": 130
+}

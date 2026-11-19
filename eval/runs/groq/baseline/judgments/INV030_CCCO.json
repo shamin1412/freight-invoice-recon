@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 262.5,
+  "reasons": [
+   "Detention quantity (5.5 hrs) exceeds allowable chargeable time (2 hrs) based on dock in/out timestamps.",
+   "Detention amount billed ($412.5) is higher than contract-supported amount ($150)."
+  ],
+  "dispute_summary": "Detention billed for 5.5 hours at $75/hr ($412.50) exceeds the contract free time of 2 hours and the actual detention of 2 hours (4h dock time minus 2h free). Correct detention charge should be $150.00."
+ },
+ "error": null,
+ "seconds": 7.428,
+ "in": 2276,
+ "out": 509
+}

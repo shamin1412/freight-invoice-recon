@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul amount matches contract rate for lane 604xx->641xx ($1300).",
+   "Fuel surcharge calculated per contract is $208.69; invoice charges $213.78, a $5.09 difference which is within the 1% tolerance.",
+   "No accessorials billed, no detention, weight matches BOL, and no duplicate invoice number found."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 24.267,
+ "in": 2814,
+ "out": 486
+}

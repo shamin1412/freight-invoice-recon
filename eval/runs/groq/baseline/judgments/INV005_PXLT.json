@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice linehaul gross matches tariff rate for class 55, weight 805\u202flbs (8.05\u202fCWT) at $61.92/CWT = $498.46.",
+   "Discount of 69.5% applied correctly, yielding net linehaul $152.03 (above the $119.50 minimum).",
+   "Fuel surcharge percentage of 24.48% corresponds to the DOE diesel price bracket for the pickup week and is applied to net linehaul only, resulting in $37.22.",
+   "Total due $189.25 equals net linehaul plus fuel surcharge; no accessorials were billed.",
+   "Shipment matches a BOL record (same PRO and BOL numbers) and is not a duplicate of any previously received invoice."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 27.309,
+ "in": 3301,
+ "out": 467
+}

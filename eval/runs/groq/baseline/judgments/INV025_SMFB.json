@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "EXCEPTION",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "No matching shipment found for BOL number SF2604168 in the BOL log.",
+   "Invoice mode LTL does not match contract mode TL."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 13.622,
+ "in": 1694,
+ "out": 114
+}

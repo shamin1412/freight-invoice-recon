@@ -1,0 +1,51 @@
+{
+ "file": "INV020_IHLG.pdf",
+ "data": {
+  "carrier_name": "IRONHORSE LOGISTICS LLC",
+  "carrier_scac": null,
+  "invoice_number": "IH100452",
+  "invoice_date": "2026-09-30",
+  "pro_number": "IH-26-04456",
+  "bol_number": "LHG-JOL-0928-7634",
+  "po_number": "4500297678",
+  "ship_date": "2026-09-28",
+  "origin_city": "Joliet",
+  "origin_state": "IL",
+  "origin_zip": "60433",
+  "dest_city": "Harrisburg",
+  "dest_state": "PA",
+  "dest_zip": "17111",
+  "mode": "TL",
+  "billed_weight_lbs": 22740.0,
+  "freight_class": null,
+  "miles": 702,
+  "linehaul_gross": 1675.0,
+  "discount_pct": null,
+  "discount_amount": null,
+  "linehaul_amount": 1675.0,
+  "fuel_surcharge_pct": null,
+  "fuel_surcharge_per_mile": 0.42,
+  "fuel_surcharge_amount": 294.84,
+  "accessorials": [
+   {
+    "code": "DET",
+    "description": "Detention - Consignee (6.5 hrs)",
+    "quantity": 6.5,
+    "rate": 60.0,
+    "amount": 390.0
+   }
+  ],
+  "total_due": 2359.84,
+  "is_reminder_or_copy": false,
+  "notes": null
+ },
+ "error": null,
+ "ocr_used": false,
+ "seconds": 7.499,
+ "input_tokens": 1503,
+ "output_tokens": 719,
+ "provider": "groq",
+ "model": "openai/gpt-oss-120b",
+ "effort": "low",
+ "at": "2026-11-18T06:28:40.893091+00:00"
+}

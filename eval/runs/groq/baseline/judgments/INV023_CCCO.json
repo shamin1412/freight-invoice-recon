@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul matches contract lane rate for 895xx->850xx ($2100).",
+   "Fuel surcharge calculated correctly using diesel price $3.773 and per\u2011mile rate $0.46 ($338.56).",
+   "Detention charge is within allowed rate and free time; the billed amount ($75) is permissible.",
+   "Accessorial DET is listed in Schedule C and does not require additional authorization.",
+   "No duplicate invoice or shipment found in records."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 17.479,
+ "in": 2319,
+ "out": 508
+}

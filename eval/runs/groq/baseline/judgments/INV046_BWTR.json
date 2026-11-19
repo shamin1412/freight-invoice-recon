@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 31.96,
+  "reasons": [
+   "Billed weight (350\u202flb) exceeds BOL weight (295\u202flb) with no re\u2011weigh certificate (clause\u202f5.2).",
+   "Fuel surcharge listed as an accessorial; schedule\u202fC does not list a fuel surcharge (clause\u202f4.1).",
+   "Calculated contract net linehaul: base rate $166.26/CWT \u00d7 2.95\u202fCWT = $490.47; after 72.5% discount = $134.88 (minimum charge $134).",
+   "Fuel surcharge per contract: 27.04% of net linehaul = $36.46.",
+   "Contract\u2011supported total = $134.88 + $36.46 = $171.34; invoice total = $203.30, over by $31.96 (>1%)."
+  ],
+  "dispute_summary": "Invoice total exceeds contract\u2011supported amount by $31.96 (\u224818.6% over). Fuel surcharge was billed as an accessorial (not allowed) and weight was increased to 350\u202flb without a certified re\u2011weigh, violating the weight clause. Both items cause the invoice to be non\u2011payable."
+ },
+ "error": null,
+ "seconds": 34.058,
+ "in": 4261,
+ "out": 780
+}

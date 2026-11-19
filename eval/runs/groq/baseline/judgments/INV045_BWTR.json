@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 96.0,
+  "reasons": [
+   "Accessorial code LAD is not listed in the BOL's authorized_accessorials (authorized: RES,LGD,NOA).",
+   "Contract Schedule C requires authorization for LAD; no authorization noted on BOL.",
+   "All other charges (linehaul, fuel surcharge, RES, NOA) are consistent with contract terms."
+  ],
+  "dispute_summary": "LAD accessorial (Lift gate - delivery) is not authorized on the BOL; only LGD is permitted. The $96.00 charged for LAD is not payable."
+ },
+ "error": null,
+ "seconds": 36.991,
+ "in": 4275,
+ "out": 636
+}

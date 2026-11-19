@@ -1,0 +1,14 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice matches BOL shipment; linehaul meets minimum charge after 69.5% discount; fuel surcharge percentage correctly applied from DOE diesel price week; no accessorials; invoice number not a duplicate; total due aligns with contract terms within 1%"
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 28.44,
+ "in": 3748,
+ "out": 397
+}

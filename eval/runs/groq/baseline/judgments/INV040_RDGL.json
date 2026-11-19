@@ -1,0 +1,16 @@
+{
+ "decision": {
+  "decision": "DISPUTE",
+  "overcharge_amount": 92.0,
+  "reasons": [
+   "Accessorial code LAD not authorized per BOL.",
+   "Billed amount for LAD does not match contract schedule.",
+   "Total invoice exceeds contract-supported amount by $92 (8.73% over)."
+  ],
+  "dispute_summary": "Accessorial LAD (Limited Access Delivery) is not listed as authorized on the BOL (authorized: RES,LGD). Additionally, the billed amount for LAD ($92) does not match the contract schedule amount ($105). These charges are not payable."
+ },
+ "error": null,
+ "seconds": 28.952,
+ "in": 3575,
+ "out": 693
+}

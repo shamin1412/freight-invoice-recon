@@ -1,0 +1,18 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Invoice linehaul matches contract rate after discount",
+   "Fuel surcharge percentage matches DOE diesel price bracket",
+   "No unauthorized accessorials",
+   "Total due aligns with calculated amount within 1% tolerance",
+   "Shipment matches a single BOL record; no duplicate billing"
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 29.165,
+ "in": 3263,
+ "out": 314
+}

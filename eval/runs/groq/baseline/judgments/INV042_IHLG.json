@@ -1,0 +1,19 @@
+{
+ "decision": {
+  "decision": "APPROVE",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "Linehaul amount matches contract schedule A for the origin/destination pair.",
+   "Fuel surcharge calculated per contract matches the invoice ($0.41 per mile * 931 miles = $381.71).",
+   "Billed weight matches BOL weight; no reweigh required.",
+   "No accessorials billed; none required.",
+   "Invoice is not a duplicate of any previously received invoice.",
+   "Total due is within 1% of the contract-supported amount."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 32.478,
+ "in": 2440,
+ "out": 305
+}

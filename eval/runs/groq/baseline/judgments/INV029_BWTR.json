@@ -1,0 +1,15 @@
+{
+ "decision": {
+  "decision": "EXCEPTION",
+  "overcharge_amount": 0.0,
+  "reasons": [
+   "BOL number LHG-RNO-1005-8426 from the invoice does not match any shipment in the BOL log.",
+   "Without a matching BOL, the invoice cannot be validated against contract rates or terms."
+  ],
+  "dispute_summary": null
+ },
+ "error": null,
+ "seconds": 30.653,
+ "in": 3543,
+ "out": 122
+}

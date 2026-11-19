@@ -23,15 +23,27 @@ TOUCHLESS APPROVED (total within 1%, nothing categorical)  |  DISPUTE + clause-c
 
 ## Results
 
-> **Pending the live run.** The numbers in this section are produced by `python -m eval.run_eval`
-> and copied from `eval/results/results.md`. Nothing here is estimated.
+Live run on 2026-11-19 with Groq `openai/gpt-oss-120b` (free tier), all 50 invoices. Every number below
+is copied from `eval/results/results.md`; raw model outputs are in `eval/runs/groq/`. Nothing is estimated.
 
 | Metric | Baseline prompt (LLM judges) | Refined prompt + rule engine |
 |---|---|---|
-| Extraction field accuracy | _pending_ | _pending_ |
-| Touchless rate | _pending_ | _pending_ |
-| Overcharges caught (of $5,668.09 planted) | _pending_ | _pending_ |
-| Seconds per invoice | _pending_ | _pending_ |
+| Extraction field accuracy | 85.1% | 95.3% |
+| Invoices with every field correct | 1 / 50 | 32 / 50 |
+| Decision accuracy (approve / dispute / exception) | 76% | 96% |
+| Touchless rate | 46% | 66% |
+| Clean invoices auto-approved | 22 / 32 | 32 / 32 |
+| Clean invoices wrongly flagged | 10 | 0 |
+| Bad invoices auto-approved (leakage) | 1 | 1 |
+| Overcharges caught (of $5,668.09 planted) | $5,201.61 | $5,293.09 |
+| Dispute amounts exactly right | 10 / 17 | 15 / 17 |
+| Total amount flagged | $6,121.29 (over-flags) | $5,293.09 |
+| Seconds per invoice (median) | 36.9 | 22.1 |
+
+The refined arm's 66% touchless is 33 approvals: all 32 clean invoices plus one leak (INV022, an
+unauthorized accessorial the extractor dropped). Its other miss, INV041 (a scanned PDF), was routed to a
+human as an exception rather than approved. Seconds per invoice include waiting on Groq free-tier rate
+limits (8k tokens/min), so they overstate model latency.
 
 **Ceilings to keep in mind.** 32 of the 50 invoices are clean (4 of them have a rounding variance under
 1%), so the highest correct touchless rate on this set is **64%**. The brief's 78% would require
