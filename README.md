@@ -140,3 +140,9 @@ eval/           run_eval.py · metrics.py · report.py · results/ · runs/
 data/           freight.db · invoices/ · answer_key.json
 app.py          Streamlit dashboard
 ```
+
+## Deploy the dashboard (Streamlit Community Cloud)
+
+1. At share.streamlit.io, create an app from this repo, branch `main`, main file `app.py`.
+2. Under Advanced settings > Secrets, add `GROQ_API_KEY = "..."` (root-level secrets become environment variables).
+3. `packages.txt` installs Tesseract for OCR; `requirements.txt` installs the rest.
